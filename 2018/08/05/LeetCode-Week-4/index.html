@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="啊啊拉格朗日" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>LeetCode Week 4 | 啊啊拉格朗日 - Hey! 似李！</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">啊啊拉格朗日</a></h1>
+        <h2 class="subtitle">Hey! 似李！</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/mylogo.gif" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/tags/">标签</a></li>
+    
+    <li><a href="/game/">Game</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="post">
+  
+  <article class="post-container card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://jzwontdie.xyz/2018/08/05/LeetCode-Week-4/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Jack Zhang">
+       <meta itemprop="description" content="I am the bone of salted fish, <br/> fish is my body&salt is my blood.">
+       <meta itemprop="image" content="/images/myavatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="啊啊拉格朗日">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">LeetCode Week 4</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-08-05T16:20:32+08:00">2018-08-05 16:20:32</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>本周回了一趟家。由于身份证被我神奇的操作弄丢了。不得已回家补办一下身份证。。现在正在家里躺尸。。<br>本周补上上次的第15题，18题大概可以像15题那么做。但我还没有尝试。<br>23题没有更优化的想法。。因此还不知道怎么做更合适。其他的题目感觉都还比较可以接受。题目如下：<br>15.<a href="https://leetcode-cn.com/problems/3sum/description/" target="_blank" rel="noopener"> 三数之和 </a><br>20.<a href="https://leetcode-cn.com/problems/valid-parentheses/description/" target="_blank" rel="noopener"> 有效的括号 </a><br>21.<a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/" target="_blank" rel="noopener"> 合并两个有序链表 </a><br>22.<a href="https://leetcode-cn.com/problems/generate-parentheses/description/" target="_blank" rel="noopener"> 括号生成 </a><br>24.<a href="https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/" target="_blank" rel="noopener"> 两两交换链表中的节点 </a><br><a id="more"></a></p>
+<h2 id="Code-15-三数之和"><a href="#Code-15-三数之和" class="headerlink" title="Code.15  三数之和 "></a>Code.15 <a href="https://leetcode-cn.com/problems/3sum/description/" target="_blank" rel="noopener"> 三数之和 </a></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？找出所有满足条件且不重复的三元组</p>
+<hr>
+<p><strong>示例</strong><br>例如, 给定数组 nums = [-1, 0, 1, 2, -1, -4]，<br>满足要求的三元组集合为：<br>[<br>  [-1, 0, 1],<br>  [-1, -1, 2]<br>]</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>先对所给的数组进行从小到大的排序，然后再用三个指针遍历数组。第一个指针p1从第0个数组开始，第二个指针p2和第三个指针p3分别指向p1后一个以及数组最后一个。考虑到数组已经呗排序过了，因此在p1指针不动的情况下，根据<code>p1 + p2 + p3</code>的值判断指针如何移动。如果有和大于目标值，说明p3过大，需要将p3向左移动一位，再判断；如果和小于目标值，说明p2过小，将p2右移；如果等于目标值，则说明找到目标数组。如此反复，直到<code>p2 = p3</code>，说明再给定的p1下已经找全了，则p1右移1位，继续上述步骤。</p>
+<p>题目中要求答案中不包括重复的结果，因此就要再移动的时候判断所以东的下一位是不是跟这一位相同，相同的话就要跳过，继续移位。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-keyword">public</span> List&lt;List&lt;Integer&gt;&gt; threeSum(<span class="hljs-keyword">int</span>[] nums) &#123;<br>        List&lt;List&lt;Integer&gt;&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;List&lt;Integer&gt;&gt;();<br>        <span class="hljs-keyword">if</span> (nums.length &lt; <span class="hljs-number">3</span>) &#123;<br>            <span class="hljs-keyword">return</span> list;<br>        &#125;<br>        Arrays.sort(nums);<span class="hljs-comment">//排序</span><br>        <span class="hljs-keyword">int</span> p1 = <span class="hljs-number">0</span>;<span class="hljs-comment">//三个指针</span><br>        <span class="hljs-keyword">int</span> p2 = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> p3 = nums.length - <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">if</span> (nums[p1] &gt; <span class="hljs-number">0</span> || nums[p3] &lt; <span class="hljs-number">0</span>) &#123;/如果排序后最小值大于<span class="hljs-number">0</span>或者最大值小于<span class="hljs-number">0</span>，说明必定无解（等于<span class="hljs-number">0</span>可能有解）<br>            <span class="hljs-keyword">return</span> list;<br>        &#125;<br>        <span class="hljs-keyword">int</span> result = <span class="hljs-number">0</span>;<span class="hljs-comment">//三个数之和</span><br>        <span class="hljs-keyword">int</span> count = nums.length - <span class="hljs-number">2</span>;<span class="hljs-comment">//p1遍历的次数</span><br>        <span class="hljs-keyword">boolean</span> flag = <span class="hljs-keyword">false</span>;<span class="hljs-comment">//是否存在aab型的结果，如果存在则需要考虑acd型，不能直接跳过a</span><br>        <span class="hljs-keyword">int</span> np2 = <span class="hljs-number">0</span>, np3 = <span class="hljs-number">0</span>;<span class="hljs-comment">//临时的指针，用来存p2、p3的重复个数</span><br>        <span class="hljs-keyword">while</span> (p1 &lt; count &amp;&amp; nums[p1] &lt;= <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//大循环</span><br>            p2 = p1 + <span class="hljs-number">1</span>;<br>            p3 = nums.length - <span class="hljs-number">1</span>;<br>            <span class="hljs-keyword">while</span> (p2 &lt; p3) &#123;<span class="hljs-comment">//小循环</span><br>                result = nums[p1] + nums[p2] + nums[p3];<br>                <span class="hljs-keyword">if</span> (result == <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//符合目标值，添加结果</span><br>                    List&lt;Integer&gt; res = <span class="hljs-keyword">new</span> ArrayList();<br>                    res.add(nums[p1]);<br>                    res.add(nums[p2]);<br>                    res.add(nums[p3]);<br>                    list.add(res);<br>                    flag = nums[p1] == nums[p2] ? <span class="hljs-keyword">false</span> : <span class="hljs-keyword">true</span>;<span class="hljs-comment">//判断是否为aab型</span><br>                    np2 = p2 + <span class="hljs-number">1</span>;<br>                    np3 = p3 - <span class="hljs-number">1</span>;<br>                    <span class="hljs-keyword">while</span> (np2 &lt; np3) &#123;<span class="hljs-comment">//找p2、p3重复了几次</span><br>                        <span class="hljs-keyword">if</span> (nums[np2] == nums[p2]) &#123;<br>                            np2++;<br>                        &#125;<br>                        <span class="hljs-keyword">if</span> (nums[np3] == nums[p3]) &#123;<br>                            np3--;<br>                        &#125;<br>                        <span class="hljs-keyword">if</span> (nums[np2] != nums[p2] &amp;&amp; nums[np3] != nums[p3]) &#123;<br>                            <span class="hljs-keyword">break</span>;<br>                        &#125;<br>                    &#125;<br>                    p2 = np2;<br>                    p3 = np3;<br>                    <span class="hljs-keyword">continue</span>;<br>                &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (result &gt; <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果结果大了</span><br>                    p3--;<br>                &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//结果小了</span><br>                    p2++;<br>                &#125;<br>            &#125;<br>            <span class="hljs-keyword">if</span> (nums[p1] != nums[p1 + <span class="hljs-number">1</span>]) &#123;<span class="hljs-comment">//p1没有重复的话</span><br>                p1++;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//p1有重复</span><br>                <span class="hljs-keyword">int</span> t = p1 + <span class="hljs-number">2</span>;<br>                <span class="hljs-keyword">while</span> (nums[p1] == nums[t] &amp;&amp; t &lt;= count) &#123;<span class="hljs-comment">//判断重复了几个</span><br>                    t++;<br>                &#125;<br>                p1 = flag ? t : t - <span class="hljs-number">1</span>;<span class="hljs-comment">//如果是aab型，就多移动一位</span><br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> list;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>大约是76%左右的提交结果，还有一些细节可以优化。</p>
+<h2 id="Code-20-有效的括号"><a href="#Code-20-有效的括号" class="headerlink" title="Code.20  有效的括号 "></a>Code.20 <a href="https://leetcode-cn.com/problems/valid-parentheses/description/" target="_blank" rel="noopener"> 有效的括号 </a></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个只包括 ‘(‘，’)’，’{‘，’}’，’[‘，’]’ 的字符串，判断字符串是否有效。<br>有效字符串需满足：<br>·左括号必须用相同类型的右括号闭合。<br>·左括号必须以正确的顺序闭合。<br>注意空字符串可被认为是有效字符串。</p>
+<hr>
+<p><strong>示例</strong><br>输入: “()[]{}”<br>输出: true</p>
+</blockquote>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>想到的方法就是用堆栈。把输入的括号依次压入堆栈，如果能匹配成一对，就弹出，如果最后堆栈内为空，那么说明这串括号是匹配的，否则就是不匹配的。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isValid</span><span class="hljs-params">(String s)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> len = s.length();<br>        <span class="hljs-keyword">if</span> (len == <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//长度为0，返回真</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (len % <span class="hljs-number">2</span> == <span class="hljs-number">1</span>) &#123;<span class="hljs-comment">//奇数长度返回假</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>        &#125;<br>        <span class="hljs-keyword">char</span>[] sc = s.toCharArray();<span class="hljs-comment">//字符串转为数组</span><br>        stack temp = <span class="hljs-keyword">new</span> stack(<span class="hljs-string">'a'</span>);<span class="hljs-comment">//新建堆栈，给堆栈放入一个无关的开头</span><br>        <span class="hljs-keyword">int</span> p = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">while</span> (p &lt; len) &#123;<br>            temp = temp.push(sc[p]);<span class="hljs-comment">//依次压入堆栈</span><br>            p++;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (temp.c != <span class="hljs-string">'a'</span>) &#123;<span class="hljs-comment">//如果不是初始字符，说明匹配失败</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>    &#125;<br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">stack</span> </span>&#123;<span class="hljs-comment">//双向链表做堆栈</span><br>    <span class="hljs-keyword">char</span> c;<br>    stack next;<span class="hljs-comment">//下一个堆栈</span><br>    stack pre;<span class="hljs-comment">//上一个堆栈</span><br>    stack(<span class="hljs-keyword">char</span> a) &#123;<span class="hljs-comment">//构造方法</span><br>        c = a;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> stack <span class="hljs-title">push</span><span class="hljs-params">(<span class="hljs-keyword">char</span> a)</span> </span>&#123;<span class="hljs-comment">//压入堆栈</span><br>            <span class="hljs-keyword">if</span> (a == <span class="hljs-string">')'</span>) &#123;<span class="hljs-comment">//如果是压入后括号</span><br>                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.c == <span class="hljs-string">'('</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.pre != <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//如果前一个不为空返回前一个，否则返回空。考虑的是第一个没有前一个。实际上必不为空，因为我放了一个无关的a作为开头，a必定不会被消除。</span><br>                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.pre;<br>                    &#125;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>                &#125;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == <span class="hljs-string">']'</span>) &#123;<span class="hljs-comment">//同理了</span><br>                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.c == <span class="hljs-string">'['</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.pre != <span class="hljs-keyword">null</span>) &#123;<br>                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.pre;<br>                    &#125;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>                &#125;<br>            &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (a == <span class="hljs-string">'&#125;'</span>) &#123;<br>                <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.c == <span class="hljs-string">'&#123;'</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.pre != <span class="hljs-keyword">null</span>) &#123;<br>                        <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.pre;<br>                    &#125;<br>                    <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;<br>                &#125;<br>            &#125;<br>            stack temp = <span class="hljs-keyword">new</span> stack(a);<span class="hljs-comment">//如果压入的没有消除，就新建一个元素，指针指向新建的元素</span><br>            temp.pre = <span class="hljs-keyword">this</span>;<br>            <span class="hljs-keyword">this</span>.next = temp;<br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.next;<br>    &#125;<br>    <br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-1"><a href="#参考答案-1" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暂时没有官方答案。我这个做法，虽然思路是没什么错，就是做法相当于绕了一个圈。因为这个“堆栈”实际上用列表就能很完美的实现啊。用一个指针指向元素，利用元素的左移模拟弹出，右移模拟压入，写起来整个程序更简洁，不像我这自己创建了一个双向链表的类，就麻烦很多了= =。不过倒是让我回顾了类的写法。。</p>
+<p>至于用列表实现的代码，我就不写了。。</p>
+<h2 id="Code-21-合并两个有序链表"><a href="#Code-21-合并两个有序链表" class="headerlink" title="Code.21  合并两个有序链表 "></a>Code.21 <a href="https://leetcode-cn.com/problems/merge-two-sorted-lists/description/" target="_blank" rel="noopener"> 合并两个有序链表 </a></h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>将两个有序链表合并为一个新的有序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。 </p>
+<hr>
+<p><strong>示例</strong><br>输入：1-&gt;2-&gt;4, 1-&gt;3-&gt;4<br>输出：1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4</p>
+</blockquote>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>链表已经有序了。所以做法就用两个指针分别遍历，然后取出小数放进新的链表中。如果有一个空了，就把另一个剩下的加入结果链表就行。</p>
+<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**<br> * Definition for singly-linked list.<br> * public class ListNode &#123;<br> *     int val;<br> *     ListNode next;<br> *     ListNode(int x) &#123; val = x; &#125;<br> * &#125;<br> */</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">mergeTwoLists</span><span class="hljs-params">(ListNode l1, ListNode l2)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (l1 == <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//如果有一个为空，返回另一个</span><br>            <span class="hljs-keyword">return</span> l2;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (l2 == <span class="hljs-keyword">null</span>) &#123;<br>            <span class="hljs-keyword">return</span> l1;<br>        &#125;<br>        ListNode res = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);<span class="hljs-comment">//结果链表</span><br>        ListNode p1 = l1, p2 = l2, p3 = res;<span class="hljs-comment">//辅助指针</span><br>        <span class="hljs-keyword">while</span> (p1 != <span class="hljs-keyword">null</span> &amp;&amp; p2 != <span class="hljs-keyword">null</span>) &#123;<br>            <span class="hljs-keyword">if</span> (p1.val &lt; p2.val) &#123;<span class="hljs-comment">//如果第一个比第二个小</span><br>                p3.val = p1.val;<br>                <span class="hljs-keyword">if</span> (p1.next == <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//判断第一个是否为最后一个了，是的话就把剩下的接到最后</span><br>                    p3.next = p2;<br>                    <span class="hljs-keyword">break</span>;<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    p1 = p1.next;<br>                &#125;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//跟上面一样</span><br>                p3.val = p2.val;<br>                <span class="hljs-keyword">if</span> (p2.next == <span class="hljs-keyword">null</span>) &#123;<br>                    p3.next = p1;<br>                    <span class="hljs-keyword">break</span>;<br>                &#125; <span class="hljs-keyword">else</span> &#123;<br>                    p2 = p2.next;<br>                &#125;<br>            &#125;<br>            p3.next = <span class="hljs-keyword">new</span> ListNode(<span class="hljs-number">0</span>);<br>            p3 = p3.next;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-2"><a href="#参考答案-2" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暂无官方解答。我的提交执行用时<br>超过 82.29 % 的 java 提交记录。</p>
+<h2 id="Code-22-括号生成"><a href="#Code-22-括号生成" class="headerlink" title="Code.22  括号生成 "></a>Code.22 <a href="https://leetcode-cn.com/problems/generate-parentheses/description/" target="_blank" rel="noopener"> 括号生成 </a></h2><h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合。</p>
+<hr>
+<p><strong>示例</strong><br>例如，给出 n = 3，生成结果为：<br>[“((()))”, “(()())”, “(())()”, “()(())”, “()()()”]</p>
+</blockquote>
+<h3 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h3><p>这道题一开始没有思路不会写。当时答案还没有出来。大概是两周之后，出了答案，我看了一下，就看懂了回溯法。其根本在于要始终保持放入括号后的序列的有效性。要保持有效性，关键有两点：<br>1、当序列中左括号数量小于右括号时，序列还可以放入两种括号中的一种；当序列中左右括号数量相同时，只能放入左括号。<br>2、左右括号的总数量各为n时，把结果序列加入列表。</p>
+<h3 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;String&gt; <span class="hljs-title">generateParenthesis</span><span class="hljs-params">(<span class="hljs-keyword">int</span> n)</span> </span>&#123;<br>        List&lt;String&gt; list = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();<span class="hljs-comment">//结果列表</span><br>        <span class="hljs-keyword">if</span> (n &lt; <span class="hljs-number">1</span>) &#123;<span class="hljs-comment">//如果n不是正数，返回空列表</span><br>            list.add(<span class="hljs-string">""</span>);<br>            <span class="hljs-keyword">return</span> list;<br>        &#125;<br>        String str = <span class="hljs-string">"("</span>;<span class="hljs-comment">//先放入第一个左括号</span><br>        addBracket(list, n - <span class="hljs-number">1</span>, n, str);<span class="hljs-comment">//深度优先循环</span><br>        <span class="hljs-keyword">return</span> list;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addBracket</span><span class="hljs-params">(List&lt;String&gt; list, <span class="hljs-keyword">int</span> left, <span class="hljs-keyword">int</span> right, String str)</span> </span>&#123;<span class="hljs-comment">//left、right分别为剩余量，str为当前的序列</span><br>        <span class="hljs-keyword">if</span> (left &lt; <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果剩余量小于0，结束</span><br>            <span class="hljs-keyword">return</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (left == right) &#123;<br>            <span class="hljs-keyword">if</span> (left == <span class="hljs-number">0</span>) &#123;<br>                list.add(str);<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                addBracket(list, left - <span class="hljs-number">1</span>, right, str + <span class="hljs-string">"("</span>);<br>            &#125;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            addBracket(list, left - <span class="hljs-number">1</span>, right, str + <span class="hljs-string">"("</span>);<br>            <span class="hljs-keyword">if</span> (left &lt; right) &#123;<br>                addBracket(list, left, right - <span class="hljs-number">1</span>, str + <span class="hljs-string">")"</span>);<br>            &#125;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-3"><a href="#参考答案-3" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暴力法就不谈了。回朔法跟我上面的做法思路一致，就是答案更加简练更厉害。简单聊一下闭合数做法。<br>一开始我的想法差不多，序列最基本的元素一对<code>()</code>，利用括号的互相嵌套以及排列组合成一个长序列。假设初始序列已经有一对括号了，那么对这对序列添加一对括号，可以添加的地方只有两个，一个是括号之中，一个是括号外面，即原序列的左右两边。为了方便讨论，我们就只考虑放在右边（因为放左边一样）。</p>
+<p>上面这是闭合数法最基本的思想。闭合数就是反过来思考，如果已经有一个长度为<code>2 * c</code>的匹配括号序列A，又有一个一个长度为<code>2 * (n - 1 - c)</code>的匹配括号序列B，那么要将A、B、和一对新括号复合成一个长度为2n的新的序列，一共有如下两类做法：<br>1、(A)B / B(A) / (B)A / A(B)，即序列在括号内<br>2、()AB / ()BA / A()B / B()A / AB() / BA()，即序列在括号外</p>
+<p>上面这些做法中可能会有重复，但是重复的情况如何我们没有办法判断，只能根据具体的括号序列才能做判断。</p>
+<p>但是，如果考虑的是，序列集合A中的序列都是长度不超过2c的所有符合要求的序列，序列集合B中的序列都是长度长度不超过2(n-1-c)的所有符合要求的序列，先假设<code>c&lt;(n-1-c)</code>，那么由于集合A与集合B都是符合要求的所有序列的集合，因此无论是上面中的哪一种，都会被<code>(A)B</code>这种情况所囊括。</p>
+<p>因此我们就可以得到一个递归关系，c为0时，必有集合A为<code>&quot;&quot;</code>,集合B为长度不超过<code>2n-2</code>的序列集合；c为1时，集合A为<code>()</code>，集合B为长度不超过<code>2n-4</code>的序列集合；c为2时，集合A为<code>()(),(())</code>，集合B为长度不超过<code>2n-6</code>的序列集合······依次按照<code>(A)B</code>组合即可得到所有结果。</p>
+<p>这个方法比较难考虑。。反正我自己肯定想不到。。</p>
+<h2 id="Code-24-两两交换链表中的节点"><a href="#Code-24-两两交换链表中的节点" class="headerlink" title="Code.24  两两交换链表中的节点 "></a>Code.24 <a href="https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/" target="_blank" rel="noopener"> 两两交换链表中的节点 </a></h2><h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个链表，两两交换其中相邻的节点，并返回交换后的链表。<br><strong>说明:</strong><br>你的算法只能使用常数的额外空间。<br>你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。</p>
+<hr>
+<p><strong>示例</strong><br>输入1-&gt;2-&gt;3-&gt;4, 输出 2-&gt;1-&gt;4-&gt;3.</p>
+</blockquote>
+<h3 id="解题思路-4"><a href="#解题思路-4" class="headerlink" title="解题思路"></a>解题思路</h3><p>直接法不解释。。。</p>
+<h3 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**<br> * Definition for singly-linked list.<br> * public class ListNode &#123;<br> *     int val;<br> *     ListNode next;<br> *     ListNode(int x) &#123; val = x; &#125;<br> * &#125;<br> */</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">swapPairs</span><span class="hljs-params">(ListNode head)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (head == <span class="hljs-keyword">null</span> || head.next == <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//如果长度小于1，直接返回就行</span><br>            <span class="hljs-keyword">return</span> head;<br>        &#125;<br>        ListNode res = head, temp, temp2, temp3;<span class="hljs-comment">//辅助的指针，用于记录交换的两个节点的位置</span><br>        temp = res.next;<br>        res.next = temp.next;<br>        temp.next = res;<br>        res = temp;<br>        temp = temp.next;<br>        <span class="hljs-keyword">while</span>(temp.next != <span class="hljs-keyword">null</span> &amp;&amp; temp.next.next != <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//保证必有两个节点才能交换</span><br>            temp2 = temp.next;<span class="hljs-comment">//链表交换需要注意不要把下一个节点给弄丢了</span><br>            temp3 = temp2.next;<br>            temp.next = temp3;<br>            temp2.next = temp3.next;<br>            temp3.next = temp2;<br>            temp = temp2;<br>        &#125;<br>        <span class="hljs-keyword">return</span> res;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-4"><a href="#参考答案-4" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暂时没有。我的提交执行用时已经战胜 99.78 % 的 java 提交记录。</p>
+<p>这题非常基础，考的是链表交换的步骤。。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>本周就这样吧。。<br>愿世界和平。。<br>咕咕咕咕.jpg</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      
+      <div class="post-tags">
+        
+        
+        
+        
+        <a class="post-tag button" href="/tags/数据结构/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>数据结构</a>
+        
+        <a class="post-tag button" href="/tags/LeetCode/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>LeetCode</a>
+        
+        <a class="post-tag button" href="/tags/周记/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>周记</a>
+        
+        <a class="post-tag button" href="/tags/Java/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/2018/07/29/LeetCode-Week-3/" rel="next" title="LeetCode Week 3"><i class="fas fa-angle-left"></i><span class="nav-title">LeetCode Week 3</span></a>
+      
+    </div>
+    <div class="post-nav-prev post-nav-item">
+      
+      <a href="/2018/08/12/LeetCode-Week-5/" rel="prev" title="LeetCode Week 5"><span class="nav-title">LeetCode Week 5</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/css/commentjs.css">
+  <script defer type="text/javascript" src="/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "github",
+      "user": "JackZxj",
+      "repo": "jackzhang.github-io",
+      "client_id": "305140c96dccb0182657",
+      "client_secret": "cbd975d0c1a3a2cb86038d3d12a693e69fb7a219",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "LeetCode Week 4",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/sidebar_background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/myavatar.png" alt="Jack Zhang">
+  
+  <h1 class="author-name">Jack Zhang</h1>
+  <h2 class="author-description"> I am the bone of salted fish, <br> fish is my body&salt is my blood.</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">18</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">12</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">29</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>文章目录</div>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-15-三数之和"><span class="toc-text">Code.15  三数之和 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-20-有效的括号"><span class="toc-text">Code.20  有效的括号 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-1"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-1"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-21-合并两个有序链表"><span class="toc-text">Code.21  合并两个有序链表 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-2"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-2"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-2"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-2"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-22-括号生成"><span class="toc-text">Code.22  括号生成 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-3"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-3"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-3"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-3"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-24-两两交换链表中的节点"><span class="toc-text">Code.24  两两交换链表中的节点 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-4"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-4"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-4"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-4"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-text">结语</span></a></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <div><i class="far fa-address-card"></i>社交链接<p></p></div>
+  <ul>
+    
+    <li><i class="fas fa-envelope"></i><a href="mailto:x_jackzhang@qq.com" target="_blank">E-Mail</a></li>
+    
+    <li><i class="fab fa-github"></i><a href="https://github.com/JackZxj" target="_blank">GitHub</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <div><i class="fas fa-link"></i>友情链接</div>
+  <ul>
+    
+    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><a href="https://sh.alynx.xyz/" target="_blank">模板作者~</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">Jack Zhang</span><span class="year"><i class="far fa-copyright"></i>2018 - 2019</span>
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":150,"vOffset":-80},"mobile":{"show":true},"react":{"opacityDefault":0.5,"opacityOnHover":0.9},"log":false});</script></body>
+</html>

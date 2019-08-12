@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="啊啊拉格朗日" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>LeetCode Week 2 | 啊啊拉格朗日 - Hey! 似李！</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">啊啊拉格朗日</a></h1>
+        <h2 class="subtitle">Hey! 似李！</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/mylogo.gif" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/tags/">标签</a></li>
+    
+    <li><a href="/game/">Game</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="post">
+  
+  <article class="post-container card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://jzwontdie.xyz/2018/07/22/LeetCode-Week-2/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Jack Zhang">
+       <meta itemprop="description" content="I am the bone of salted fish, <br/> fish is my body&salt is my blood.">
+       <meta itemprop="image" content="/images/myavatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="啊啊拉格朗日">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">LeetCode Week 2</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-22T18:28:49+08:00">2018-07-22 18:28:49</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>复习高数要死了。。考研真难！！<br>填上本周的坑。本期主要回顾LeetCode题库中的6-9题还有第11题。也就是<a href="https://leetcode-cn.com/problems/zigzag-conversion/description/" target="_blank" rel="noopener"> Z字形变换 </a>、<a href="https://leetcode-cn.com/problems/reverse-integer/description/" target="_blank" rel="noopener"> 反转整数 </a>、<a href="https://leetcode-cn.com/problems/string-to-integer-atoi/description/" target="_blank" rel="noopener"> 字符串转整数 (atoi) </a>、<a href="https://leetcode-cn.com/problems/palindrome-number/description/" target="_blank" rel="noopener"> 回文数 </a>和<a href="https://leetcode-cn.com/problems/container-with-most-water/description/" target="_blank" rel="noopener"> 盛最多水的容器 </a>这五题。第5题上次没有看懂，到现在也还没研究。。第10题，是真的不会做。情况有点复杂。一时还没整理清楚怎么处理不会有遗漏。。Whatever，先看着填坑吧。。<del>林克死大头</del><br><a id="more"></a></p>
+<h2 id="Code-6-Z字形变换"><a href="#Code-6-Z字形变换" class="headerlink" title="Code.6  Z字形变换 "></a>Code.6 <a href="https://leetcode-cn.com/problems/zigzag-conversion/description/" target="_blank" rel="noopener"> Z字形变换 </a></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>将字符串 “PAYPALISHIRING” 以Z字形排列成给定的行数：<br>P   A   H   N<br>A P L S I I G<br>Y   I   R<br>之后从左往右，逐行读取字符：”PAHNAPLSIIGYIR”<br>实现一个将字符串进行指定行数变换的函数。</p>
+<hr>
+<p><strong>示例</strong><br>输入: s = “PAYPALISHIRING”, numRows = 3<br>输出: “PAHNAPLSIIGYIR”</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>观察Z字排列可以得出，一个循环依次从原字符串中读取了k = (2 <em> numRows - 2)个字母，并将其排在了第` p &gt; numRows ? ( 2 </em> numRows - p) : p; //p为一次循环中的第p个字母 `列。通过这个规律，我们就可以对字符串进行遍历，依次读取对应位置的字母，最后将其拼接成一个字符串。</p>
+<p>当然还有一个预处理。考虑到最后一个循环可能不是完整的循环，因此我在原本的字符串后面用空格补齐了最后一次循环，然后最后使用字符替换将空格替换成空字符。这样就不用考虑最后一个循环不完整的问题。（其实不考虑这个也可以，直接利用字符串长度进行判断，如果超出了就不取就行了。当时没有想到这个。这就导致了在完成拼接后，还要进行删除操作，这个其实是挺影响效率的。）</p>
+<p>其实就是参考答案中的第二种方法，参考答案写的更简洁。另外有一点会影响运行效率的问题，我在后面的补充中会提到。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">convert</span><span class="hljs-params">(String s, <span class="hljs-keyword">int</span> numRows)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (numRows == <span class="hljs-number">1</span>) &#123;<br>            <span class="hljs-keyword">return</span> s;<br>        &#125;<br>        <span class="hljs-keyword">int</span> num = numRows * <span class="hljs-number">2</span> - <span class="hljs-number">2</span>;<span class="hljs-comment">//一次循环的字母数</span><br>        <span class="hljs-keyword">int</span> zCol = s.length() / num + <span class="hljs-number">1</span>;<span class="hljs-comment">//Z字循环的次数，包括最后一次不完整循环</span><br>        String str = s + <span class="hljs-string">""</span>;<span class="hljs-comment">//新建字符串</span><br>        <span class="hljs-keyword">int</span> p = <span class="hljs-number">0</span>;<span class="hljs-comment">//指针</span><br>        <span class="hljs-comment">//在新建字符串后面补空格占位</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = s.length() - <span class="hljs-number">1</span>; i &lt; zCol * num; i++) &#123;<br>            str += <span class="hljs-string">" "</span>;<br>        &#125;<br>        <span class="hljs-keyword">int</span> len = str.length();<br>        <span class="hljs-comment">//换成字符数组，提升效率</span><br>        <span class="hljs-keyword">char</span>[] strc = str.toCharArray();<br>        String ss = <span class="hljs-string">""</span>;<br>        <span class="hljs-keyword">int</span> count = <span class="hljs-number">0</span>;<br>        <span class="hljs-comment">//Z循环结果的第一行，因为第一行一个循环只有一个，所以单独拿出来了</span><br>        <span class="hljs-keyword">while</span> (p &lt; len) &#123;<br>            ss += strc[p];<br>            p += num;<br>        &#125;<br>        <span class="hljs-comment">//指针重定位</span><br>        p = numRows - <span class="hljs-number">1</span>;<br>        <span class="hljs-comment">//辅助指针</span><br>        <span class="hljs-keyword">int</span> pp = numRows - <span class="hljs-number">2</span>;<br>        count = len - ss.length();<span class="hljs-comment">//还需要循环多少次</span><br>        <span class="hljs-keyword">while</span> (count &gt; <span class="hljs-number">0</span>) &#123;<br>        <span class="hljs-comment">//把第p-pp行的补上</span><br>            <span class="hljs-keyword">if</span> (pp != <span class="hljs-number">0</span>) &#123;<br>                ss += strc[p - pp];<br>                ss += strc[p + pp];<br>                count -= <span class="hljs-number">2</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                ss += strc[p];<br>                count--;<br>            &#125;<br>            p += num;<span class="hljs-comment">//指针移动</span><br>            <span class="hljs-keyword">if</span> (p &gt;= len) &#123;<br>                p = numRows - <span class="hljs-number">1</span>;<br>                pp--;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> ss.replaceAll(<span class="hljs-string">" "</span>,<span class="hljs-string">""</span>);<span class="hljs-comment">//去除空格</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a><a href="https://leetcode-cn.com/problems/zigzag-conversion/solution/" target="_blank" rel="noopener">参考答案</a></h3><p>方法一创建一个长度为numRows长的字符串链表，每链表的每一项代表每一行中应存在的字符串。通过一次遍历，把每个字母加到对应的字符串链表里去。最后再把几个字符串取出来拼在一起就行了。<br>方法二跟我做的方法相同。答案写的更清晰明了，也更简洁。</p>
+<h3 id="补充——String-StringBuilder与StringBuffer"><a href="#补充——String-StringBuilder与StringBuffer" class="headerlink" title="补充——String,StringBuilder与StringBuffer"></a>补充——String,StringBuilder与StringBuffer</h3><p>Java中有三种不同的字符串类型，分别是String,StringBuilder以及StringBuffer。在初学的时候（就是我了），通常只使用到String类型。因为String类型对于平时的写代码已经基本够用了。但是在遇到对效率有一定要求的项目的时候，就需要注意这三种类的区别了。<br>这三种类的最主要的区别在于运行速度和线程安全这两方面。简单说，String的运行效率最低，StringBuilder运行效率最高，即：</p>
+<p></p><p style="text-align:center"> StringBuilder &gt; StringBuffer &gt; String </p><br>而在线程安全性方面，StringBuilder是线程不安全的，StringBuffer是线程安全的，而String是字符串常量，就不存在安不安全的问题，即：<p></p>
+<p></p><p style="text-align:center"> StringBuffer &gt; StringBuilder </p><br>具体的情况，在<a href="https://www.cnblogs.com/su-feng/p/6659064.html" target="_blank" rel="noopener"> Java中的String，StringBuilder，StringBuffer三者的区别-酥风 </a>这篇文章中讲述的比较详细，请感兴趣的朋友自行查看。<p></p>
+<h2 id="Code-7-反转整数"><a href="#Code-7-反转整数" class="headerlink" title="Code.7  反转整数 "></a>Code.7 <a href="https://leetcode-cn.com/problems/reverse-integer/description/" target="_blank" rel="noopener"> 反转整数 </a></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个 32 位有符号整数，将整数中的数字进行反转。</p>
+<hr>
+<p><strong>示例</strong><br>输入: 123<br>输出: 321</p>
+</blockquote>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>把传入的数依次对10求余数，在除以10，循环直到为0，获取每一位上的数字，然后倒过来乘10的k次方。这题比较简单，需要注意的点有两个。第一个是要处理负数，第二个是反转后溢出要置零（我第一次没看清。。以为溢出的就输出最大值。坑了我一次提交记录好气啊！）。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">reverse</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> wei = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> flag = x &gt; <span class="hljs-number">0</span> ? <span class="hljs-number">0</span> : <span class="hljs-number">1</span>;<span class="hljs-comment">//符号位，是否为负数</span><br>        <span class="hljs-keyword">int</span> temp = x &gt; <span class="hljs-number">0</span> ? x : (<span class="hljs-number">0</span> - x);<span class="hljs-comment">//负数的话转正在处理</span><br>        <span class="hljs-keyword">int</span>[] num = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">15</span>];<span class="hljs-comment">//存数字用的。。最大9位数这个量超了</span><br>        <span class="hljs-keyword">while</span> (temp != <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//求每一位</span><br>            num[wei] = temp % <span class="hljs-number">10</span>;<br>            temp /= <span class="hljs-number">10</span>;<br>            wei++;<br>        &#125;<br>        <span class="hljs-keyword">double</span> result = <span class="hljs-number">0</span>;<span class="hljs-comment">//用double类型存反转后的结果</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = wei - <span class="hljs-number">1</span>; i &gt;= <span class="hljs-number">0</span>; i--) &#123;<br>            result += num[wei - i - <span class="hljs-number">1</span>] * Math.pow(<span class="hljs-number">10.0</span>, i);<br>        &#125;<br>        <span class="hljs-keyword">if</span> (result &gt; Integer.MAX_VALUE || result &lt; Integer.MIN_VALUE) &#123; <span class="hljs-comment">//超过返回0</span><br>            result = <span class="hljs-number">0</span>;<br>        &#125;<br>        <span class="hljs-keyword">int</span> y = (<span class="hljs-keyword">int</span>)result;<span class="hljs-comment">//转为int类型</span><br>        <span class="hljs-keyword">return</span> flag == <span class="hljs-number">0</span> ? y : (<span class="hljs-number">0</span> - y);<span class="hljs-comment">//记得符号位</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-1"><a href="#参考答案-1" class="headerlink" title="参考答案"></a><a href="https://leetcode-cn.com/problems/reverse-integer/solution/" target="_blank" rel="noopener">参考答案</a></h3><p>思路其实是一样的，做法不一样。在取每一位数字后，答案直接进行了乘10处理。这样一次循环就能实现得到结果。而我的做法需要两次循环。</p>
+<p>当然两者的效率差别不大。原因在于数字太小。循环9次和循环18次在计算机看来没有什么太大区别，因此效率就差别不大了。</p>
+<p>不过话说回来，还是要注意这种能以此循环结果的就最好一次就好，数据量大了，多一次循环就是多浪费了一次循环的时间。</p>
+<h2 id="Code-8-字符串转整数-atoi"><a href="#Code-8-字符串转整数-atoi" class="headerlink" title="Code.8  字符串转整数 (atoi) "></a>Code.8 <a href="https://leetcode-cn.com/problems/string-to-integer-atoi/description/" target="_blank" rel="noopener"> 字符串转整数 (atoi) </a></h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>实现 atoi，将字符串转为整数。<br>在找到第一个非空字符之前，需要移除掉字符串中的空格字符。如果第一个非空字符是正号或负号，选取该符号，并将其与后面尽可能多的连续的数字组合起来，这部分字符即为整数的值。如果第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。<br>字符串可以在形成整数的字符后面包括多余的字符，这些字符可以被忽略，它们对于函数没有影响。<br>当字符串中的第一个非空字符序列不是个有效的整数；或字符串为空；或字符串仅包含空白字符时，则不进行转换。<br>若函数不能执行有效的转换，返回 0。</p>
+<hr>
+<p><strong>示例</strong><br>输入: “4193 with words”<br>输出: 4193<br>解释: 转换截止于数字 ‘3’ ，因为它的下一个字符不为数字。</p>
+</blockquote>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>问题不大。就暴力解题呗。从头开始判断是不是+、-，然后判断是不是数字，是数字的话有多少位。直到不是数字为止。</p>
+<p>这题的难点倒不是思路，而是各种坑。需要对各种情况考虑周全才能AC，这就比较难受了。</p>
+<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">myAtoi</span><span class="hljs-params">(String str)</span> </span>&#123;<br>        String s = str.trim();<span class="hljs-comment">//去空格</span><br>        <span class="hljs-keyword">int</span> len = s.length();<br>        <span class="hljs-keyword">if</span> (len == <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (s.charAt(<span class="hljs-number">0</span>) == <span class="hljs-string">'+'</span>) &#123;<span class="hljs-comment">//如果首位是+，长度为1或者第二位是-，就不是数字直接返回0</span><br>            <span class="hljs-keyword">if</span> (len == <span class="hljs-number">1</span> || s.charAt(<span class="hljs-number">1</span>) == <span class="hljs-string">'-'</span>) &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>            &#125;<br>            s = s.substring(<span class="hljs-number">1</span>,len);<span class="hljs-comment">//去掉首位的+号</span><br>            len = s.length();<span class="hljs-comment">//其实直接-1就行了。重新计算纯属浪费。。</span><br>        &#125;<br>        <span class="hljs-comment">//情况比较复杂。。如果长度为0、不是-或者数字、只有一个-号都直接返回0</span><br>        <span class="hljs-keyword">if</span> (len == <span class="hljs-number">0</span> || (s.charAt(<span class="hljs-number">0</span>) != <span class="hljs-string">'-'</span> &amp;&amp; (s.charAt(<span class="hljs-number">0</span>) &gt; <span class="hljs-string">'9'</span> || s.charAt(<span class="hljs-number">0</span>) &lt; <span class="hljs-string">'0'</span>)) || (len == <span class="hljs-number">1</span> &amp;&amp; s.charAt(<span class="hljs-number">0</span>) == <span class="hljs-string">'-'</span>) ) &#123;<span class="hljs-comment">//这里其实没有优化。。应该跟上面的＋放在一起来着。。之所以是这样子的是因为这道题的测试中各种稀奇古怪的输入，导致我i错的太多，然后就放飞自我了。。</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>        &#125;<br>        <span class="hljs-keyword">int</span> flag = s.charAt(<span class="hljs-number">0</span>) == <span class="hljs-string">'-'</span> ? <span class="hljs-number">1</span> : <span class="hljs-number">0</span>;<span class="hljs-comment">//是不是有-号</span><br>        <span class="hljs-keyword">int</span> p = flag;<br>        <span class="hljs-keyword">while</span> (p &lt; len) &#123;<span class="hljs-comment">//循环判断是不是数字，不是退出</span><br>            <span class="hljs-keyword">if</span> (s.charAt(p) &gt; <span class="hljs-string">'9'</span> || s.charAt(p) &lt; <span class="hljs-string">'0'</span>) &#123;<br>                <span class="hljs-keyword">if</span> (p == flag) &#123;<span class="hljs-comment">//判断－号后面是不是字符。。这个应该在上面做判断的。。</span><br>                    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>                &#125;<br>                <span class="hljs-keyword">break</span>;<br>            &#125;<br>            p++;<br>        &#125;<br>        String nums = s.substring(<span class="hljs-number">0</span>, p);<span class="hljs-comment">//把数字的部分切出来</span><br>        <span class="hljs-keyword">double</span> numd = Double.parseDouble(nums);<span class="hljs-comment">//转成double</span><br>        <span class="hljs-keyword">if</span> (numd &gt;= Integer.MAX_VALUE) &#123;<span class="hljs-comment">//最大溢出返回最大int值</span><br>            <span class="hljs-keyword">return</span> Integer.MAX_VALUE;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (numd &lt;= Integer.MIN_VALUE) &#123;<span class="hljs-comment">//最小溢出</span><br>            <span class="hljs-keyword">return</span> Integer.MIN_VALUE;<br>        &#125;<br>        <span class="hljs-keyword">int</span> numi = (<span class="hljs-keyword">int</span>)numd;<span class="hljs-comment">//返回结果</span><br>        <span class="hljs-keyword">return</span> numi;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-2"><a href="#参考答案-2" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>没有参考答案。如果有机会我再改进改进。<del>改进？不存在的</del></p>
+<h2 id="Code-9-回文数"><a href="#Code-9-回文数" class="headerlink" title="Code.9  回文数 "></a>Code.9 <a href="https://leetcode-cn.com/problems/palindrome-number/description/" target="_blank" rel="noopener"> 回文数 </a></h2><h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。</p>
+<hr>
+<p><strong>示例</strong><br>输入: 121<br>输出: true</p>
+</blockquote>
+<h3 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h3><p>这是一道简单题。按照惯例直接暴力解题。</p>
+<p>按照规则，小于0的肯定直接返回<code>false</code>，0~9之间的返回<code>true</code>，剩下的两位数以上的，再进行判断。先求得这个数字的位数，然后获取这个数的两端，判断对应位上的数字是不是相同，不同就返回<code>false</code>，遍历完就返回<code>true</code>。</p>
+<h3 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">isPalindrome</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//小于0的直接返回</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">10</span>) &#123;<span class="hljs-comment">//大于0小于10的返回真</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>        &#125;<br>        <span class="hljs-keyword">int</span> temp = x;<br>        <span class="hljs-keyword">int</span> wei = <span class="hljs-number">0</span>;<span class="hljs-comment">//记录位数</span><br>        <span class="hljs-keyword">while</span> (temp &gt; <span class="hljs-number">0</span>) &#123;<br>            temp /= <span class="hljs-number">10</span>;<br>            wei++;<br>        &#125;<br>        <span class="hljs-comment">//判断对应位上的数字是否相同</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= (wei / <span class="hljs-number">2</span>); i++) &#123;<br>            <span class="hljs-keyword">if</span> ((x / (<span class="hljs-keyword">int</span>)Math.pow(<span class="hljs-number">10</span>, i - <span class="hljs-number">1</span>)) % <span class="hljs-number">10</span> != (x / (<span class="hljs-keyword">int</span>)Math.pow(<span class="hljs-number">10</span>, wei - i)) % <span class="hljs-number">10</span>) &#123;<br>                <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-3"><a href="#参考答案-3" class="headerlink" title="参考答案"></a><a href="https://leetcode-cn.com/problems/palindrome-number/solution/" target="_blank" rel="noopener">参考答案</a></h3><p>将数字对折，判断是不是对称的。想不到还可以这样。</p>
+<p>答案用了半次位数的遍历，我这个算起来得有1.5次。。因为我用了一次遍历来计算位数。</p>
+<h2 id="Code-11-盛最多水的容器"><a href="#Code-11-盛最多水的容器" class="headerlink" title="Code.11  盛最多水的容器 "></a>Code.11 <a href="https://leetcode-cn.com/problems/container-with-most-water/description/" target="_blank" rel="noopener"> 盛最多水的容器 </a></h2><h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定 n 个非负整数 a1，a2，…，an，每个数代表坐标中的一个点 (i, ai) 。画 n 条垂直线，使得垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。<br><strong>注意</strong>：你不能倾斜容器，n 至少是2。</p>
+<hr>
+<p><strong>示例</strong><br>无</p>
+</blockquote>
+<h3 id="解题思路-4"><a href="#解题思路-4" class="headerlink" title="解题思路"></a>解题思路</h3><p>一开始的做法还是暴力法。双指针遍历，找出最大值。然后就超时了= =。。。然后就参考了答案的逼近法。。就是分别让两个指针指向头尾，然后指向小的数的指针向大的数的指针移动，直到相遇。</p>
+<h3 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">maxArea</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] height)</span> </span>&#123;<br>        <span class="hljs-keyword">double</span> Vmax = <span class="hljs-number">0</span>;<span class="hljs-comment">//用来存容积的。。当时考虑到可能容积会溢出int范围，所以使用double。。</span><br>        <span class="hljs-keyword">int</span> left = <span class="hljs-number">0</span>;<span class="hljs-comment">//左指针</span><br>        <span class="hljs-keyword">int</span> right = height.length - <span class="hljs-number">1</span>;<span class="hljs-comment">//右指针</span><br>        <span class="hljs-keyword">while</span> (right &gt; left) &#123;<span class="hljs-comment">//两指针没相遇</span><br>            Vmax = Vmax &gt; Math.min(height[left], height[right]) * (right - left) ? Vmax : Math.min(height[left], height[right]) * (right - left);<span class="hljs-comment">//存容积较大的一个数据</span><br>            <span class="hljs-keyword">if</span> (height[left] &lt; height[right]) &#123;<span class="hljs-comment">//如果右指针比较大，左指针就向右移</span><br>                left++;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//否则右指针向左移</span><br>                right--;<br>            &#125;<br>        &#125;<br>        <span class="hljs-comment">//返回一个int类型的数</span><br>        <span class="hljs-keyword">return</span> Vmax &gt;= Integer.MAX_VALUE ? Integer.MAX_VALUE : (<span class="hljs-keyword">int</span>)Vmax;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-4"><a href="#参考答案-4" class="headerlink" title="参考答案"></a><a href="https://leetcode-cn.com/problems/container-with-most-water/solution/" target="_blank" rel="noopener">参考答案</a></h3><p>答案很清晰，建议看答案。答案的动图有助于理解这么逼近为什么会是最大面积。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>这周就先这样更新5道题吧。中间跳过去的第10题等之后我想到解决方法了再聊吧。这周主要其实是在学数学，接下去的重点也会放在考研科目的学习上，毕竟还是考研重要。最近每天晚上睡觉的时候，都会有一种强烈的压力。感觉自己要没有书读了。嗨呀，羡慕保研的大佬们！</p>
+<p>现在留下的泪都是当初脑子进的水！！现在羡慕也没用= =还是要努力啊。。向我梦想的实验室努力进发！加油💪！！！</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      
+      <div class="post-tags">
+        
+        
+        
+        
+        <a class="post-tag button" href="/tags/数据结构/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>数据结构</a>
+        
+        <a class="post-tag button" href="/tags/LeetCode/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>LeetCode</a>
+        
+        <a class="post-tag button" href="/tags/周记/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>周记</a>
+        
+        <a class="post-tag button" href="/tags/Java/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/2018/07/15/LeetCode-Week-1/" rel="next" title="LeetCode Week 1"><i class="fas fa-angle-left"></i><span class="nav-title">LeetCode Week 1</span></a>
+      
+    </div>
+    <div class="post-nav-prev post-nav-item">
+      
+      <a href="/2018/07/29/LeetCode-Week-3/" rel="prev" title="LeetCode Week 3"><span class="nav-title">LeetCode Week 3</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/css/commentjs.css">
+  <script defer type="text/javascript" src="/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "github",
+      "user": "JackZxj",
+      "repo": "jackzhang.github-io",
+      "client_id": "305140c96dccb0182657",
+      "client_secret": "cbd975d0c1a3a2cb86038d3d12a693e69fb7a219",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "LeetCode Week 2",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/sidebar_background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/myavatar.png" alt="Jack Zhang">
+  
+  <h1 class="author-name">Jack Zhang</h1>
+  <h2 class="author-description"> I am the bone of salted fish, <br> fish is my body&salt is my blood.</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">18</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">12</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">29</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>文章目录</div>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-6-Z字形变换"><span class="toc-text">Code.6  Z字形变换 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案"><span class="toc-text">参考答案</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#补充——String-StringBuilder与StringBuffer"><span class="toc-text">补充——String,StringBuilder与StringBuffer</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-7-反转整数"><span class="toc-text">Code.7  反转整数 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-1"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-1"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-8-字符串转整数-atoi"><span class="toc-text">Code.8  字符串转整数 (atoi) </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-2"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-2"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-2"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-2"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-9-回文数"><span class="toc-text">Code.9  回文数 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-3"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-3"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-3"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-3"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-11-盛最多水的容器"><span class="toc-text">Code.11  盛最多水的容器 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-4"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-4"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-4"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-4"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-text">结语</span></a></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <div><i class="far fa-address-card"></i>社交链接<p></p></div>
+  <ul>
+    
+    <li><i class="fas fa-envelope"></i><a href="mailto:x_jackzhang@qq.com" target="_blank">E-Mail</a></li>
+    
+    <li><i class="fab fa-github"></i><a href="https://github.com/JackZxj" target="_blank">GitHub</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <div><i class="fas fa-link"></i>友情链接</div>
+  <ul>
+    
+    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><a href="https://sh.alynx.xyz/" target="_blank">模板作者~</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">Jack Zhang</span><span class="year"><i class="far fa-copyright"></i>2018 - 2019</span>
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":150,"vOffset":-80},"mobile":{"show":true},"react":{"opacityDefault":0.5,"opacityOnHover":0.9},"log":false});</script></body>
+</html>

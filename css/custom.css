@@ -1,0 +1,22 @@
+.canBox {
+  width: 800px;
+  height: 600px;
+  padding: 0;
+  background: #468;
+  position: relative;
+  margin: auto;
+  border-radius: 0.6em;
+}
+#canvas1,
+#canvas2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 800px;
+  height: 600px;
+  border-radius: 0.6em;
+}
+.comments .commentjs img {
+  max-width: 50%;
+  max-height: 50%;
+}

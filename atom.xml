@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>啊啊拉格朗日</title>
+  
+  <subtitle>Hey! 似李！</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jzwontdie.xyz/"/>
+  <updated>2019-03-09T10:55:37.155Z</updated>
+  <id>https://jzwontdie.xyz/</id>
+  
+  <author>
+    <name>Jack Zhang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Golang学习笔记ch2</title>
+    <link href="https://jzwontdie.xyz/2019/03/06/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0ch2/"/>
+    <id>https://jzwontdie.xyz/2019/03/06/golang学习笔记ch2/</id>
+    <published>2019-03-06T12:57:14.000Z</published>
+    <updated>2019-03-09T10:55:37.155Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;依旧是Go语言的学习。虽然已经有了一定的Java基础，但是Go的一些结构特性还真是别具特色。。。从Java语言的特性切换到Go过来虽然说能够很快的理解并接受，但是用的时候还是回感慨这些设计还真是精妙，甚至有种编程语言本该如此设计的感觉。。&lt;/p&gt;
+&lt;p&gt;本篇的备注信息较多，方便给初学者一个参考，也方便我自己过后回顾的时候能够很快回忆起来。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Golang" scheme="https://jzwontdie.xyz/categories/Golang/"/>
+    
+    
+      <category term="Golang" scheme="https://jzwontdie.xyz/tags/Golang/"/>
+    
+      <category term="开发入门" scheme="https://jzwontdie.xyz/tags/%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="程序结构" scheme="https://jzwontdie.xyz/tags/%E7%A8%8B%E5%BA%8F%E7%BB%93%E6%9E%84/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Golang学习笔记ch1</title>
+    <link href="https://jzwontdie.xyz/2019/03/04/golang%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0ch1/"/>
+    <id>https://jzwontdie.xyz/2019/03/04/golang学习笔记ch1/</id>
+    <published>2019-03-04T13:32:40.000Z</published>
+    <updated>2019-03-09T10:52:53.159Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;太菜找不到工作了，愁愁愁愁愁。&lt;/p&gt;
+&lt;p&gt;看了一下字节跳动的招聘很多都是golang的岗位，新的独角兽果然就是敢于用新鲜事物。。。&lt;/p&gt;
+&lt;p&gt;本文只是个人的学习代码记录，仅供参考。&lt;/p&gt;
+&lt;p&gt;参考书籍：《Go程序设计语言》 【美】艾伦 A.A. 多诺万，布莱恩 W. 柯尼汉 著，李道兵、高博、旁向才等译 机械工业出版社 2017年&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Golang" scheme="https://jzwontdie.xyz/categories/Golang/"/>
+    
+    
+      <category term="Golang" scheme="https://jzwontdie.xyz/tags/Golang/"/>
+    
+      <category term="开发入门" scheme="https://jzwontdie.xyz/tags/%E5%BC%80%E5%8F%91%E5%85%A5%E9%97%A8/"/>
+    
+      <category term="HelloWorld" scheme="https://jzwontdie.xyz/tags/HelloWorld/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机网络常用网络协议合集</title>
+    <link href="https://jzwontdie.xyz/2019/02/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%B8%B8%E7%94%A8%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE%E5%90%88%E9%9B%86/"/>
+    <id>https://jzwontdie.xyz/2019/02/19/计算机网络常用网络协议合集/</id>
+    <published>2019-02-18T16:04:45.000Z</published>
+    <updated>2019-02-21T14:59:14.840Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Sad!!!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="计算机网络" scheme="https://jzwontdie.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="考研知识点" scheme="https://jzwontdie.xyz/tags/%E8%80%83%E7%A0%94%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+      <category term="计算机网络" scheme="https://jzwontdie.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="网络协议" scheme="https://jzwontdie.xyz/tags/%E7%BD%91%E7%BB%9C%E5%8D%8F%E8%AE%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>操作系统知识点脑图合集</title>
+    <link href="https://jzwontdie.xyz/2019/02/18/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9F%A5%E8%AF%86%E7%82%B9%E8%84%91%E5%9B%BE%E5%90%88%E9%9B%86/"/>
+    <id>https://jzwontdie.xyz/2019/02/18/操作系统知识点脑图合集/</id>
+    <published>2019-02-18T15:57:19.000Z</published>
+    <updated>2019-02-21T14:19:42.444Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Sad！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="操作系统" scheme="https://jzwontdie.xyz/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+      <category term="操作系统" scheme="https://jzwontdie.xyz/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="考研知识点" scheme="https://jzwontdie.xyz/tags/%E8%80%83%E7%A0%94%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+      <category term="脑图" scheme="https://jzwontdie.xyz/tags/%E8%84%91%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>计算机组成原理知识点脑图合集</title>
+    <link href="https://jzwontdie.xyz/2019/02/18/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86%E7%9F%A5%E8%AF%86%E7%82%B9%E8%84%91%E5%9B%BE%E5%90%88%E9%9B%86/"/>
+    <id>https://jzwontdie.xyz/2019/02/18/计算机组成原理知识点脑图合集/</id>
+    <published>2019-02-18T15:48:21.000Z</published>
+    <updated>2019-02-21T14:14:20.459Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Sad.&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="计算机组成原理" scheme="https://jzwontdie.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    
+    
+      <category term="考研知识点" scheme="https://jzwontdie.xyz/tags/%E8%80%83%E7%A0%94%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+      <category term="脑图" scheme="https://jzwontdie.xyz/tags/%E8%84%91%E5%9B%BE/"/>
+    
+      <category term="计算机组成原理" scheme="https://jzwontdie.xyz/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>落水的狗</title>
+    <link href="https://jzwontdie.xyz/2019/01/17/%E8%90%BD%E6%B0%B4%E7%9A%84%E7%8B%97/"/>
+    <id>https://jzwontdie.xyz/2019/01/17/落水的狗/</id>
+    <published>2019-01-16T17:39:41.000Z</published>
+    <updated>2019-02-21T12:57:06.360Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;不知轻重的叶，以为熬过了秋风潇潇，就能凌冬傲雪，不过一阵冬雨，凋零水坑。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;打击来得太过突然，本应早早料到，却盲目自信。&lt;/p&gt;
+&lt;p&gt;打击来的正好，这不过就是我的真实水平罢了。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="无言" scheme="https://jzwontdie.xyz/categories/%E6%97%A0%E8%A8%80/"/>
+    
+    
+      <category term="随笔" scheme="https://jzwontdie.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="牢骚" scheme="https://jzwontdie.xyz/tags/%E7%89%A2%E9%AA%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阴天，在不开灯的房间</title>
+    <link href="https://jzwontdie.xyz/2019/01/13/%E9%98%B4%E5%A4%A9%EF%BC%8C%E5%9C%A8%E4%B8%8D%E5%BC%80%E7%81%AF%E7%9A%84%E6%88%BF%E9%97%B4/"/>
+    <id>https://jzwontdie.xyz/2019/01/13/阴天，在不开灯的房间/</id>
+    <published>2019-01-13T14:53:01.000Z</published>
+    <updated>2019-01-13T15:36:03.177Z</updated>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;离开一座可以有一百个理由，留恋一座城只因为几个人刻下痕迹。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;又是一年冬天，C城的天气依旧很是清爽，没有凌冽的风，也没有冰清的雪，更没有窒息的霾。C城是座挺宜居的城，尽管空气并不如当初那样清澈，但是仍是熟悉的南方山水小镇的样子。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="无言" scheme="https://jzwontdie.xyz/categories/%E6%97%A0%E8%A8%80/"/>
+    
+    
+      <category term="随笔" scheme="https://jzwontdie.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="牢骚" scheme="https://jzwontdie.xyz/tags/%E7%89%A2%E9%AA%9A/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据结构知识点脑图合集</title>
+    <link href="https://jzwontdie.xyz/2018/11/08/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E7%9F%A5%E8%AF%86%E7%82%B9%E8%84%91%E5%9B%BE%E5%90%88%E9%9B%86/"/>
+    <id>https://jzwontdie.xyz/2018/11/08/数据结构知识点脑图合集/</id>
+    <published>2018-11-08T12:00:42.000Z</published>
+    <updated>2018-11-08T12:16:29.843Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Rua！诈尸！&lt;/p&gt;
+&lt;p&gt;今天是考研现场确认的日子。。。我觉得我的复习进度太慢了。很难受=。=&lt;/p&gt;
+&lt;p&gt;花了近4天才做完考研数据结构的知识点大全（大部分应该是全的），这相当于是我的二轮复习了。。。这一次复习又把上次学会没记住的给过了一遍，感觉又有了一些新的收获。。。&lt;/p&gt;
+&lt;p&gt;啊啊啊加快进度！！&lt;/p&gt;
+&lt;p&gt;UP！UP！UP！&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="考研知识点" scheme="https://jzwontdie.xyz/tags/%E8%80%83%E7%A0%94%E7%9F%A5%E8%AF%86%E7%82%B9/"/>
+    
+      <category term="脑图" scheme="https://jzwontdie.xyz/tags/%E8%84%91%E5%9B%BE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>C和C++中的形参传值、指针传值、引用传值解析</title>
+    <link href="https://jzwontdie.xyz/2018/09/30/C%E5%92%8CC++%E4%B8%AD%E7%9A%84%E5%BD%A2%E5%8F%82%E4%BC%A0%E5%80%BC%E3%80%81%E6%8C%87%E9%92%88%E4%BC%A0%E5%80%BC%E3%80%81%E5%BC%95%E7%94%A8%E4%BC%A0%E5%80%BC%E8%A7%A3%E6%9E%90/"/>
+    <id>https://jzwontdie.xyz/2018/09/30/C和C++中的形参传值、指针传值、引用传值解析/</id>
+    <published>2018-09-30T07:30:42.000Z</published>
+    <updated>2018-09-30T07:52:48.492Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;咕咕咕咕姑姑。。。。&lt;br&gt;之前的每周刷题被我鸽了两个月了得有了吧。。。其实一个月前还是有在刷的。只是懒得写。这个月以来都在刷考研数学和专业课，因此也就一直咕咕咕带现在了。不过没关系，接下去还是会咕咕咕的，目测也得到考研结束才会回来。。。&lt;/p&gt;
+&lt;p&gt;今天突然诈尸是因为，在考研专业课数据结构中，关于函数的指针、引用传值的问题长期以来一直没有解决，今天在题目中遇到了，就干脆一口气弄清楚了，以免下次遇到了再不清不楚。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="C/C++" scheme="https://jzwontdie.xyz/categories/C-C/"/>
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/categories/C-C/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="指针" scheme="https://jzwontdie.xyz/tags/%E6%8C%87%E9%92%88/"/>
+    
+      <category term="引用传值" scheme="https://jzwontdie.xyz/tags/%E5%BC%95%E7%94%A8%E4%BC%A0%E5%80%BC/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode Week 5</title>
+    <link href="https://jzwontdie.xyz/2018/08/12/LeetCode-Week-5/"/>
+    <id>https://jzwontdie.xyz/2018/08/12/LeetCode-Week-5/</id>
+    <published>2018-08-12T12:32:48.000Z</published>
+    <updated>2019-02-21T13:56:56.363Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;正题如下：&lt;br&gt;26.&lt;a href=&quot;https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 删除排序数组中的重复项 &lt;/a&gt;&lt;br&gt;27.&lt;a href=&quot;https://leetcode-cn.com/problems/remove-element&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 移除元素 &lt;/a&gt;&lt;br&gt;28.&lt;a href=&quot;https://leetcode-cn.com/problems/implement-strstr&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 实现strStr() &lt;/a&gt;&lt;br&gt;29.&lt;a href=&quot;https://leetcode-cn.com/problems/divide-two-integers&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 两数相除 &lt;/a&gt;&lt;br&gt;31.&lt;a href=&quot;https://leetcode-cn.com/problems/next-permutation&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 下一个排列 &lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/categories/LeetCode/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/tags/LeetCode/"/>
+    
+      <category term="周记" scheme="https://jzwontdie.xyz/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+      <category term="Java" scheme="https://jzwontdie.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode Week 4</title>
+    <link href="https://jzwontdie.xyz/2018/08/05/LeetCode-Week-4/"/>
+    <id>https://jzwontdie.xyz/2018/08/05/LeetCode-Week-4/</id>
+    <published>2018-08-05T08:20:32.000Z</published>
+    <updated>2018-08-18T06:25:39.076Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本周回了一趟家。由于身份证被我神奇的操作弄丢了。不得已回家补办一下身份证。。现在正在家里躺尸。。&lt;br&gt;本周补上上次的第15题，18题大概可以像15题那么做。但我还没有尝试。&lt;br&gt;23题没有更优化的想法。。因此还不知道怎么做更合适。其他的题目感觉都还比较可以接受。题目如下：&lt;br&gt;15.&lt;a href=&quot;https://leetcode-cn.com/problems/3sum/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 三数之和 &lt;/a&gt;&lt;br&gt;20.&lt;a href=&quot;https://leetcode-cn.com/problems/valid-parentheses/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 有效的括号 &lt;/a&gt;&lt;br&gt;21.&lt;a href=&quot;https://leetcode-cn.com/problems/merge-two-sorted-lists/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 合并两个有序链表 &lt;/a&gt;&lt;br&gt;22.&lt;a href=&quot;https://leetcode-cn.com/problems/generate-parentheses/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 括号生成 &lt;/a&gt;&lt;br&gt;24.&lt;a href=&quot;https://leetcode-cn.com/problems/swap-nodes-in-pairs/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 两两交换链表中的节点 &lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/categories/LeetCode/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/tags/LeetCode/"/>
+    
+      <category term="周记" scheme="https://jzwontdie.xyz/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+      <category term="Java" scheme="https://jzwontdie.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode Week 3</title>
+    <link href="https://jzwontdie.xyz/2018/07/29/LeetCode-Week-3/"/>
+    <id>https://jzwontdie.xyz/2018/07/29/LeetCode-Week-3/</id>
+    <published>2018-07-29T13:53:38.000Z</published>
+    <updated>2018-08-12T07:50:33.556Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本周的学习效率好低，感觉整个人就很浮躁。好烦啊。优秀的人各有各的优秀，咸鱼的人只有各种废渣的理由。。= =&lt;/p&gt;
+&lt;p&gt;本周照常更新第12、13、14，16、17以及19题，题目分别是：&lt;/p&gt;
+&lt;p&gt;12.&lt;a href=&quot;https://leetcode-cn.com/problems/integer-to-roman/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 整数转罗马数字 &lt;/a&gt;&lt;br&gt;13.&lt;a href=&quot;https://leetcode-cn.com/problems/roman-to-integer/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 罗马数字转整数 &lt;/a&gt;&lt;br&gt;14.&lt;a href=&quot;https://leetcode-cn.com/problems/longest-common-prefix/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 最长公共前缀 &lt;/a&gt;&lt;br&gt;16.&lt;a href=&quot;https://leetcode-cn.com/problems/3sum-closest/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 最接近的三数之和 &lt;/a&gt;&lt;br&gt;17.&lt;a href=&quot;https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 电话号码的字母组合 &lt;/a&gt;&lt;br&gt;19.&lt;a href=&quot;https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 删除链表的倒数第N个节点 &lt;/a&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/categories/LeetCode/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/tags/LeetCode/"/>
+    
+      <category term="周记" scheme="https://jzwontdie.xyz/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+      <category term="Java" scheme="https://jzwontdie.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode Week 2</title>
+    <link href="https://jzwontdie.xyz/2018/07/22/LeetCode-Week-2/"/>
+    <id>https://jzwontdie.xyz/2018/07/22/LeetCode-Week-2/</id>
+    <published>2018-07-22T10:28:49.000Z</published>
+    <updated>2018-07-22T13:35:51.324Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;复习高数要死了。。考研真难！！&lt;br&gt;填上本周的坑。本期主要回顾LeetCode题库中的6-9题还有第11题。也就是&lt;a href=&quot;https://leetcode-cn.com/problems/zigzag-conversion/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; Z字形变换 &lt;/a&gt;、&lt;a href=&quot;https://leetcode-cn.com/problems/reverse-integer/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 反转整数 &lt;/a&gt;、&lt;a href=&quot;https://leetcode-cn.com/problems/string-to-integer-atoi/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 字符串转整数 (atoi) &lt;/a&gt;、&lt;a href=&quot;https://leetcode-cn.com/problems/palindrome-number/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 回文数 &lt;/a&gt;和&lt;a href=&quot;https://leetcode-cn.com/problems/container-with-most-water/description/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; 盛最多水的容器 &lt;/a&gt;这五题。第5题上次没有看懂，到现在也还没研究。。第10题，是真的不会做。情况有点复杂。一时还没整理清楚怎么处理不会有遗漏。。Whatever，先看着填坑吧。。&lt;del&gt;林克死大头&lt;/del&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/categories/LeetCode/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/tags/LeetCode/"/>
+    
+      <category term="周记" scheme="https://jzwontdie.xyz/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+      <category term="Java" scheme="https://jzwontdie.xyz/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>LeetCode Week 1</title>
+    <link href="https://jzwontdie.xyz/2018/07/15/LeetCode-Week-1/"/>
+    <id>https://jzwontdie.xyz/2018/07/15/LeetCode-Week-1/</id>
+    <published>2018-07-15T05:14:24.000Z</published>
+    <updated>2018-07-22T14:22:57.754Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这是一个新坑。近期开启了&lt;a href=&quot;https://leetcode-cn.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;LeetCode&lt;/a&gt;生涯，主要的原因是自己的代码量不足，写代码有一种难产的感觉。一方面基础语法记得不太清楚，另一方面是思路较为混乱，感觉想的很多，但是动手实现的时候跟不上，这让我觉得很难受。选择Leetcode是因为，刷知乎刷到了一个问题叫&lt;a href=&quot;https://www.zhihu.com/question/31092580/answer/442881738&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;刷leetcode吃力正常吗？&lt;/a&gt;的问题。。然后就一时兴起，就去看了这个oj，看着网站感觉还行，比以前用过的oj清爽&lt;del&gt;（以前的Oj已经弃坑了）&lt;/del&gt;，而且在线编辑器也还蛮好看的，可选择的语言也挺多，于是就决定入坑了。&lt;/p&gt;
+&lt;p&gt;试做了一题，感觉这个系统做的还是挺人性化的，比以前弃坑的oj好很多的一点是可以在线测试代码结果，和答案结果做比较，可以得到问题可能出现的地方。提交后出错，也会给你最后错误时的输入是什么，就冲这一点我就要吹爆了。大部分oj都不会告诉你错误时最后一次输入是什么，有时候漏了什么细小的条件，是真的很难发现，给出问题所在，就可以根据错误修改，这点真的太重要了，&lt;code&gt;刷题心情++&lt;/code&gt;啊！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;那么就开始我们的LeetCode之旅吧！&lt;/strong&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/categories/LeetCode/"/>
+    
+    
+      <category term="数据结构" scheme="https://jzwontdie.xyz/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="LeetCode" scheme="https://jzwontdie.xyz/tags/LeetCode/"/>
+    
+      <category term="周记" scheme="https://jzwontdie.xyz/tags/%E5%91%A8%E8%AE%B0/"/>
+    
+      <category term="Java" scheme="https://jzwontdie.xyz/tags/Java/"/>
+    
+      <category term="hash table" scheme="https://jzwontdie.xyz/tags/hash-table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>基于canvas的网页小游戏</title>
+    <link href="https://jzwontdie.xyz/2018/07/08/%E5%9F%BA%E4%BA%8Ecanvas%E7%9A%84%E7%BD%91%E9%A1%B5%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
+    <id>https://jzwontdie.xyz/2018/07/08/基于canvas的网页小游戏/</id>
+    <published>2018-07-07T17:13:46.000Z</published>
+    <updated>2018-07-07T17:21:31.098Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;期末考试终于结束了，各种事项也到了尾声了&lt;del&gt;（并不）&lt;/del&gt;。鸽了一周多的项目记录该补回来了。&lt;/p&gt;
+&lt;p&gt;本次的项目是一个利用HTML5中&lt;code&gt;canvas&lt;/code&gt;标签的网页小游戏，所有素材由&lt;code&gt;JavaScript&lt;/code&gt;语言实时绘制，第一次接触这种操作其实还是蛮好玩的。canvas即画布，利用JavaScript操控“画笔”在canvas中不断绘画，生成一幅一幅画，当画面连续播放时，就成了动画，再结合JavaScript的动作响应，最终成为一个能够响应不同操作的小游戏。闲话不多说，下面分享一下项目的一些情况。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="前端" scheme="https://jzwontdie.xyz/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+      <category term="canvas" scheme="https://jzwontdie.xyz/tags/canvas/"/>
+    
+      <category term="Javascript" scheme="https://jzwontdie.xyz/tags/Javascript/"/>
+    
+      <category term="HTML5" scheme="https://jzwontdie.xyz/tags/HTML5/"/>
+    
+      <category term="小游戏" scheme="https://jzwontdie.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>介系李没玩过的船新版本</title>
+    <link href="https://jzwontdie.xyz/2018/06/17/%E4%BB%8B%E7%B3%BB%E6%9D%8E%E6%B2%A1%E7%8E%A9%E8%BF%87%E7%9A%84%E8%88%B9%E6%96%B0%E7%89%88%E6%9C%AC/"/>
+    <id>https://jzwontdie.xyz/2018/06/17/介系李没玩过的船新版本/</id>
+    <published>2018-06-17T11:59:42.000Z</published>
+    <updated>2018-06-17T17:05:18.336Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;折腾了两天，总算是基本完成了整个博客的搭建了。累死我了（叹）  &lt;/p&gt;
+&lt;p&gt;花了好长时间，换了一个新皮肤，看着舒服了点。暂时就决定用这个主题了，在此，先感谢&lt;a href=&quot;https://sh.alynx.xyz/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt; AlynxZhou &lt;/a&gt;先生提供的主题~  &lt;/p&gt;
+&lt;p&gt;在开始博客之旅前，还是先总结一下本次建立博客的总过程以及遇到的坑吧。  &lt;/p&gt;
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://jzwontdie.xyz/categories/GitHub/"/>
+    
+      <category term="Github Pages" scheme="https://jzwontdie.xyz/categories/GitHub/Github-Pages/"/>
+    
+    
+      <category term="GitHub Pages" scheme="https://jzwontdie.xyz/tags/GitHub-Pages/"/>
+    
+      <category term="Hexo" scheme="https://jzwontdie.xyz/tags/Hexo/"/>
+    
+      <category term="Aria" scheme="https://jzwontdie.xyz/tags/Aria/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://jzwontdie.xyz/2018/06/16/hello-world/"/>
+    <id>https://jzwontdie.xyz/2018/06/16/hello-world/</id>
+    <published>2018-06-16T14:53:50.000Z</published>
+    <updated>2018-06-17T16:51:13.560Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://jzwontdie.xyz/categories/GitHub/"/>
+    
+    
+      <category term="Hexo" scheme="https://jzwontdie.xyz/tags/Hexo/"/>
+    
+      <category term="Hello" scheme="https://jzwontdie.xyz/tags/Hello/"/>
+    
+      <category term="懒得删" scheme="https://jzwontdie.xyz/tags/%E6%87%92%E5%BE%97%E5%88%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hey, GitHub</title>
+    <link href="https://jzwontdie.xyz/2018/06/16/Hey-GitHub/"/>
+    <id>https://jzwontdie.xyz/2018/06/16/Hey-GitHub/</id>
+    <published>2018-06-15T17:43:42.000Z</published>
+    <updated>2018-06-17T16:51:00.441Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title&gt;&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;开篇-做点有趣的事&quot;&gt;&lt;a href=&quot;#开篇-做点有趣的事&quot; class=&quot;headerlink&quot; title=&quot;开篇 - 做点有趣的事&quot;&gt;&lt;/a&gt;开篇 - 做点有趣的事&lt;/h2&gt;&lt;p&gt;从之前就一直想要折腾一个自己的个人博客，但是苦于自己技术渣，以及自己时间安排不妥当（拖延癌晚期），就一直咕咕咕。今天晚上洗完澡，又想起了这个事，感觉再这么拖延下去怕是遥遥无期了。于是回宿舍整理了东西（拖延了一会儿），终于决定了在github上搭一个博客！&lt;br&gt;
+    
+    </summary>
+    
+      <category term="GitHub" scheme="https://jzwontdie.xyz/categories/GitHub/"/>
+    
+      <category term="Github Pages" scheme="https://jzwontdie.xyz/categories/GitHub/Github-Pages/"/>
+    
+    
+      <category term="GitHub Pages" scheme="https://jzwontdie.xyz/tags/GitHub-Pages/"/>
+    
+      <category term="随笔" scheme="https://jzwontdie.xyz/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="博客" scheme="https://jzwontdie.xyz/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>

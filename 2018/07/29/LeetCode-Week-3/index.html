@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#33363b">
+    <meta name="msapplication-TileColor" content="#33363b">
+    
+    
+    
+    <meta name="keywords" content="Life, ARIA, Hexo">
+    
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    
+    
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#33363b">
+    
+    
+    <link rel="manifest" href="/favicons/site.webmanifest">
+    
+    
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    
+    
+    <link rel="alternate" href="/atom.xml" title="啊啊拉格朗日" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="/favicons/favicon.ico">
+    
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    
+    <link rel="stylesheet" type="text/css" href="/css/sidebar.css">
+    
+    
+<link rel="stylesheet" type="text/css" href="/css/page.css">
+<link rel="stylesheet" type="text/css" href="/css/post.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+    <link rel="stylesheet" type="text/css" href="/css/atom-one-dark.css">
+    <link rel="stylesheet" type="text/css" href="/css/lightgallery.min.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script defer type="text/javascript" src="/js/util.js"></script>
+    <script defer type="text/javascript" src="/js/scrollspy.js"></script>
+    <script defer type="text/javascript" src="/js/fontawesome-all.min.js"></script>
+    <script defer type="text/javascript" src="/js/lightgallery.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-fullscreen.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-hash.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-pager.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-thumbnail.min.js"></script>
+    <script defer type="text/javascript" src="/js/lg-zoom.min.js"></script>
+    
+    <script defer src="/js/busuanzi.pure.mini.js"></script>
+    
+    
+    <script defer type="text/javascript" src="/js/search.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function () {
+      var searchPath = "search.xml";
+      if (searchPath.length === 0) {
+        searchPath = "search.xml";
+      }
+      var path = "/" + searchPath;
+      searchFunc(path, "search-input", "search-result");
+    });
+    </script>
+    
+    
+    <script defer type="text/javascript" src="/js/index.js"></script>
+    
+    <script defer type="text/javascript" src="/js/custom.js"></script>
+    <title>LeetCode Week 3 | 啊啊拉格朗日 - Hey! 似李！</title>
+  </head>
+  <body itemscope itemtype="http://schema.org/WebPage" lang="zh_CN" data-spy="scroll" data-target=".list-group">
+    
+<header id="header" class="header" style="background: #33363b;">
+  <div class="container">
+    <div class="header-container">
+      <div class="header-title">
+        <h1 class="title"><a href="/">啊啊拉格朗日</a></h1>
+        <h2 class="subtitle">Hey! 似李！</h2>
+      </div>
+      <div class="logo">
+        <img src="/images/mylogo.gif" alt="logo">
+      </div>
+    </div>
+    
+<nav id="nav" class="nav">
+  <a id="nav-toggle" class="nav-toggle"><i class="fas fa-bars"></i></a>
+  <ul id="menu">
+    
+    <li><a href="/">首页</a></li>
+    
+    <li><a href="/archives/">归档</a></li>
+    
+    <li><a href="/categories/">分类</a></li>
+    
+    <li><a href="/tags/">标签</a></li>
+    
+    <li><a href="/game/">Game</a></li>
+    
+  </ul>
+</nav>
+
+
+  </div>
+</header>
+
+
+    <main id="main" class="main">
+      <div class="container">
+        <div class="main-container">
+          <div class="content">
+            
+<div id="post" class="post">
+  
+  <article class="post-container card" itemscope itemtype="http://schema.org/Article">
+    <div class="post-block">
+      <link itemprop="mainEntityOfPage" href="https://jzwontdie.xyz/2018/07/29/LeetCode-Week-3/">
+      <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+       <meta itemprop="name" content="Jack Zhang">
+       <meta itemprop="description" content="I am the bone of salted fish, <br/> fish is my body&salt is my blood.">
+       <meta itemprop="image" content="/images/myavatar.png">
+      </span>
+      <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+       <meta itemprop="name" content="啊啊拉格朗日">
+      </span>
+    </div>
+    <header class="post-header">
+      <h1 class="post-title" itemprop="name headline">LeetCode Week 3</h1>
+      <div class="post-meta">
+        
+        <span class="post-date">
+          <i class="far fa-calendar-plus"></i><span><time title="post-date" itemprop="dateCreated datePublished" datetime="2018-07-29T21:53:38+08:00">2018-07-29 21:53:38</time></span>
+        </span>
+        
+        
+        
+        <span class="post-meta-divider divider">|</span>
+        
+        <span class="post-categories">
+          
+          <i class="far fa-folder-open"></i><span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/LeetCode/" itemprop="url" rel="index"><span itemprop="name">LeetCode</span></a></span>
+        </span>
+        
+        
+        
+        
+      </div>
+    </header>
+    <main class="post-main" itemprop="articleBody">
+      <p>本周的学习效率好低，感觉整个人就很浮躁。好烦啊。优秀的人各有各的优秀，咸鱼的人只有各种废渣的理由。。= =</p>
+<p>本周照常更新第12、13、14，16、17以及19题，题目分别是：</p>
+<p>12.<a href="https://leetcode-cn.com/problems/integer-to-roman/description/" target="_blank" rel="noopener"> 整数转罗马数字 </a><br>13.<a href="https://leetcode-cn.com/problems/roman-to-integer/description/" target="_blank" rel="noopener"> 罗马数字转整数 </a><br>14.<a href="https://leetcode-cn.com/problems/longest-common-prefix/description/" target="_blank" rel="noopener"> 最长公共前缀 </a><br>16.<a href="https://leetcode-cn.com/problems/3sum-closest/description/" target="_blank" rel="noopener"> 最接近的三数之和 </a><br>17.<a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/description/" target="_blank" rel="noopener"> 电话号码的字母组合 </a><br>19.<a href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/" target="_blank" rel="noopener"> 删除链表的倒数第N个节点 </a><br><a id="more"></a></p>
+<p>另外有一个对我来说不太好的消息。考研中的数据结构解题只能用C或者C++求解。。对C和C++我基本都不太记得了。可能C还会一点，C++当初学的时候根本没好好学过只会用当时大一学的C的语法加上半吊子的类。</p>
+<p>我个人其实不是太喜欢C++，主要的原因是C++比Java更接近底层一些，毕竟是C上面传下来的。然后它对于指针之类的操作就更灵活一点。我还是喜欢Java以及觉得Java比C++优雅的很重要的一个原因就是不用纠结指针的问题了。。之前写过一个C/C++的扫雷小游戏（下次有机会我弄上来），里头的指针弄得我很烦。其实也没有用到很复杂的指针，但就是不是很清楚具体是什么。。结果稀里糊涂最后居然能成功运行。。</p>
+<p>所以话说回来，可能接下去会改用C或者C++来刷题了。。我倒是觉得思想比较重要。但是要是到时候写不出来C/C++，还是会有点尴尬。。不过我已经刷了20多道题了。。这些题还都是用Java写的。回头尝试用C再实现一次应该不难？回头再说。。先更新本周的题。。Come on！</p>
+<h2 id="Code-12-整数转罗马数字"><a href="#Code-12-整数转罗马数字" class="headerlink" title="Code.12  整数转罗马数字 "></a>Code.12 <a href="https://leetcode-cn.com/problems/integer-to-roman/description/" target="_blank" rel="noopener"> 整数转罗马数字 </a></h2><h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。</p>
+<hr>
+<p><strong>示例</strong><br>输入: 58<br>输出: “LVIII”<br>解释: C = 100, L = 50, XXX = 30, III = 3.</p>
+</blockquote>
+<h3 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h3><p>将输入的数按照其位数拆解成数组，再将每一个数转化为对应的罗马数字。由于罗马数字在个位上有两位字符可以表示，在十位、百位上也有各两位可以表示，在千位上由于输入限制到3k，因此千位只有1位。这样子我们可以先将罗马数字字符弄成一个字符数组，在数字的第<code>i</code>位上，可以直接取字符的第<code>2i</code>、<code>2i+1</code>以及<code>2(i + 1)</code>(如果有9的话需要从上一级借位)字符组成对应的数字。这样就统一了每一位的输入，就不用针对每一位单独讨论了。</p>
+<p>另外有一点就是从最高位开始转化，符合从左到右的习惯，而且输出的结果也很好理解。如果从低位开始的话，有借位的情况就稍微麻烦一点。也并不是没有办法解决，我这里就不展开讨论了，直接上代码。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">intToRoman</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (num &lt; <span class="hljs-number">1</span> || num &gt; <span class="hljs-number">3999</span>) &#123;<span class="hljs-comment">//当输入的数越界，返回空。题目说了范围，不要这个也可以</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;<br>        &#125;<br>        <span class="hljs-keyword">int</span> wei = <span class="hljs-number">0</span>;<span class="hljs-comment">//从个位开始获取</span><br>        <span class="hljs-keyword">int</span> temp = num;<br>        <span class="hljs-keyword">int</span>[] number = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[<span class="hljs-number">4</span>];<span class="hljs-comment">//题目最多到千位，只要4位就行</span><br>        <span class="hljs-keyword">while</span> (temp &gt; <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//依次获取个位、十位、百位、千位</span><br>            number[wei] = temp % <span class="hljs-number">10</span>;<br>            temp /= <span class="hljs-number">10</span>;<br>            wei++;<br>        &#125;<br>        String result = <span class="hljs-string">""</span>;<span class="hljs-comment">//结果</span><br>        <span class="hljs-keyword">while</span> (wei &gt; <span class="hljs-number">0</span>) &#123;<br>            wei--;<span class="hljs-comment">//从最高位开始转化</span><br>            result += numToRoman(number[wei], wei);<span class="hljs-comment">//转化函数</span><br>        &#125;<br>        <span class="hljs-keyword">return</span> result;<br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">numToRoman</span><span class="hljs-params">(<span class="hljs-keyword">int</span> num, <span class="hljs-keyword">int</span> wei)</span> </span>&#123;<span class="hljs-comment">//转化函数，num代表这某个位上的数，wei代表它所在的位</span><br>        <span class="hljs-keyword">int</span> one = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">char</span>[] letter = &#123;<span class="hljs-string">'I'</span>,<span class="hljs-string">'V'</span>,<span class="hljs-string">'X'</span>,<span class="hljs-string">'L'</span>,<span class="hljs-string">'C'</span>,<span class="hljs-string">'D'</span>,<span class="hljs-string">'M'</span>&#125;;<span class="hljs-comment">//转化字典</span><br>        String str = <span class="hljs-string">""</span>;<br>        <span class="hljs-keyword">if</span> (num &lt; <span class="hljs-number">4</span>) &#123;<span class="hljs-comment">//1-3直接输出1或者10或者100</span><br>            one = num;<br>            <span class="hljs-keyword">while</span> (one &gt; <span class="hljs-number">0</span>) &#123;<br>                str += letter[wei * <span class="hljs-number">2</span>];<br>                one--;<br>            &#125;<br>            <span class="hljs-keyword">return</span> str;<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (num == <span class="hljs-number">4</span>) &#123;<span class="hljs-comment">//如果为4的话，需要转化为5-1</span><br>            <span class="hljs-keyword">return</span> str + letter[wei * <span class="hljs-number">2</span>] + letter[wei * <span class="hljs-number">2</span> + <span class="hljs-number">1</span>];<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (num == <span class="hljs-number">5</span>) &#123;<span class="hljs-comment">//5有单独的数字</span><br>            <span class="hljs-keyword">return</span> str + letter[wei * <span class="hljs-number">2</span> + <span class="hljs-number">1</span>];<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (num &gt; <span class="hljs-number">5</span> &amp;&amp; num &lt; <span class="hljs-number">9</span>) &#123;<span class="hljs-comment">//6-8用5+（num - 5）* 1</span><br>            one = num - <span class="hljs-number">5</span>;<br>            str += letter[wei * <span class="hljs-number">2</span> + <span class="hljs-number">1</span>];<br>            <span class="hljs-keyword">while</span> (one &gt; <span class="hljs-number">0</span>) &#123;<br>                str += letter[wei * <span class="hljs-number">2</span>];<br>                one--;<br>            &#125;<br>            <span class="hljs-keyword">return</span> str;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//如果为9的话，就借位，用10-1</span><br>            <span class="hljs-keyword">return</span> str + letter[wei * <span class="hljs-number">2</span>] + letter[wei * <span class="hljs-number">2</span> + <span class="hljs-number">2</span>];<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案"><a href="#参考答案" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暂时没有答案，这个解法在排行中速度超过了78.9%的Java提交记录，所以说这个算法还算较为合格。一次提交就通过，真开心~</p>
+<h2 id="Code-13-罗马数字转整数"><a href="#Code-13-罗马数字转整数" class="headerlink" title="Code.13  罗马数字转整数 "></a>Code.13 <a href="https://leetcode-cn.com/problems/roman-to-integer/description/" target="_blank" rel="noopener"> 罗马数字转整数 </a></h2><h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。</p>
+<hr>
+<p><strong>示例</strong><br>输入: “MCMXCIV”<br>输出: 1994<br>解释: M = 1000, CM = 900, XC = 90, IV = 4.</p>
+</blockquote>
+<h3 id="解题思路-1"><a href="#解题思路-1" class="headerlink" title="解题思路"></a>解题思路</h3><p>其实就是上一题反过来操作。。依次读取字符，暗战转化规则转成数字，然后再合成一个数字。</p>
+<p>这题没有想太多。直接暴力解题了。主要是考虑到藩镇都要字符匹配，合在一起跟分开似乎区别不是很大？从算法简洁的角度来说。。这么做显然是不太合格的。。但是我还真没有什么解决的想法（字符映射成数字？）。。</p>
+<h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">romanToInt</span><span class="hljs-params">(String s)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> len = s.length();<br>        <span class="hljs-keyword">char</span>[] str = s.toCharArray();<span class="hljs-comment">//转成字符数组来处理</span><br>        <span class="hljs-keyword">int</span> p = len - <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">int</span>[] num = &#123;<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>&#125;;<span class="hljs-comment">//用来存每一位数字的</span><br>        <span class="hljs-keyword">while</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<br>            <span class="hljs-comment">//个位</span><br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'I'</span>) &#123;<br>                num[<span class="hljs-number">0</span>]++;<span class="hljs-comment">//如果是1的话，就在个位的对应位上+1</span><br>                p--;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'V'</span>) &#123;<span class="hljs-comment">//如果是5的话，就在个位上+5</span><br>                num[<span class="hljs-number">0</span>] += <span class="hljs-number">5</span>;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果5的前面还有数字，说明是4，那就个位减1</span><br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'I'</span>) &#123;<br>                        num[<span class="hljs-number">0</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-comment">//十位</span><br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'X'</span>) &#123;<span class="hljs-comment">//如果是10，十位+1</span><br>                num[<span class="hljs-number">1</span>]++;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果十位的前面有一个1，说明是借位的。。借了一个1，因此在个位上减1就行了</span><br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'I'</span>) &#123;<br>                        num[<span class="hljs-number">0</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'L'</span>) &#123;<span class="hljs-comment">//50，所以十位上+5</span><br>                num[<span class="hljs-number">1</span>] += <span class="hljs-number">5</span>;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//40，所以十位-1</span><br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'X'</span>) &#123;<br>                        num[<span class="hljs-number">1</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-comment">//百位跟10位一样</span><br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'C'</span>) &#123;<br>                num[<span class="hljs-number">2</span>]++;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'X'</span>) &#123;<br>                        num[<span class="hljs-number">1</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'D'</span>) &#123;<br>                num[<span class="hljs-number">2</span>] += <span class="hljs-number">5</span>;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'C'</span>) &#123;<br>                        num[<span class="hljs-number">2</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>            <span class="hljs-comment">//千位只有1的可能，就简单一点</span><br>            <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'M'</span>) &#123;<br>                num[<span class="hljs-number">3</span>]++;<br>                p--;<br>                <span class="hljs-keyword">if</span> (p &gt;= <span class="hljs-number">0</span>) &#123;<br>                    <span class="hljs-keyword">if</span> (str[p] == <span class="hljs-string">'C'</span>) &#123;<br>                        num[<span class="hljs-number">2</span>]--;<br>                        p--;<br>                    &#125;<br>                &#125;<br>                <span class="hljs-keyword">continue</span>;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> num[<span class="hljs-number">0</span>] + num[<span class="hljs-number">1</span>] * <span class="hljs-number">10</span> + num[<span class="hljs-number">2</span>] * <span class="hljs-number">100</span> + num[<span class="hljs-number">3</span>] * <span class="hljs-number">1000</span>;<span class="hljs-comment">//把各个位上的数字乘位权然后加起来就行了</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-1"><a href="#参考答案-1" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>暂时也没有答案。这个提交了大约战胜了57.8%的java提交。。算是常规的做法吧。</p>
+<h2 id="Code-14-最长公共前缀"><a href="#Code-14-最长公共前缀" class="headerlink" title="Code.14  最长公共前缀 "></a>Code.14 <a href="https://leetcode-cn.com/problems/longest-common-prefix/description/" target="_blank" rel="noopener"> 最长公共前缀 </a></h2><h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>编写一个函数来查找字符串数组中的最长公共前缀。<br>如果不存在公共前缀，返回空字符串 “”</p>
+<hr>
+<p><strong>示例</strong><br>输入: [“flower”,”flow”,”flight”]<br>输出: “fl”</p>
+</blockquote>
+<h3 id="解题思路-2"><a href="#解题思路-2" class="headerlink" title="解题思路"></a>解题思路</h3><p>双重循环，第一个循环遍历最短的字符串的各个字符，第二个循环判断其余字符串的第i个字符是不是这个字符，不是的话直接返回最短字符串的从头到第<code>i-1</code>个字符串。</p>
+<h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">longestCommonPrefix</span><span class="hljs-params">(String[] strs)</span> </span>&#123;<br>        <span class="hljs-keyword">if</span> (strs.length == <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果为空数组，直接返回空</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (strs.length == <span class="hljs-number">1</span>) &#123;<span class="hljs-comment">//如果只有一个字符串，直接返回它本身</span><br>            <span class="hljs-keyword">return</span> strs[<span class="hljs-number">0</span>];<br>        &#125;<br>        <span class="hljs-keyword">int</span>[] len = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[strs.length];<span class="hljs-comment">//计算字符串内所有字符串的长度</span><br>        <span class="hljs-keyword">int</span> min = <span class="hljs-number">0</span>;<span class="hljs-comment">//最小字符串长度所在位置</span><br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; strs.length; i++) &#123;<span class="hljs-comment">//找出字符串最短的那个字符串</span><br>            len[i] = strs[i].length();<br>            min = len[min] &lt; strs[i].length() ? min : i;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (len[min] == <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//如果最短字符串为空，就直接返回空字符串</span><br>            <span class="hljs-keyword">return</span> <span class="hljs-string">""</span>;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<br>            <span class="hljs-keyword">int</span> p = <span class="hljs-number">0</span>;<br>            findout:<span class="hljs-comment">//给大循环命名为findout</span><br>            <span class="hljs-keyword">while</span> (p &lt; len[min]) &#123;<span class="hljs-comment">//每个字符串都查找一次</span><br>                <span class="hljs-keyword">int</span> ps = <span class="hljs-number">0</span>;<br>                <span class="hljs-keyword">while</span> (ps &lt; strs.length) &#123;<span class="hljs-comment">//判断对应位置的是否相同</span><br>                    <span class="hljs-keyword">if</span> (strs[min].charAt(p) != strs[ps].charAt(p)) &#123;<br>                        <span class="hljs-keyword">break</span> findout;<span class="hljs-comment">//不同的话直接退出大循环，可以直接返回结果了</span><br>                    &#125;<br>                    ps++;<br>                &#125;<br>                p++;<br>            &#125;<br>            <span class="hljs-keyword">return</span> strs[min].substring(<span class="hljs-number">0</span>, p);<span class="hljs-comment">//直接返回最短字符串的从0到p-1的字符串</span><br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-2"><a href="#参考答案-2" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>这个也没有答案。本次提交战胜了86%的java提交记录。emmm毕竟是一道简单题。。解题思路大家估计都差不多。。。吧？</p>
+<h2 id="Code-16-最接近的三数之和"><a href="#Code-16-最接近的三数之和" class="headerlink" title="Code.16  最接近的三数之和 "></a>Code.16 <a href="https://leetcode-cn.com/problems/3sum-closest/description/" target="_blank" rel="noopener"> 最接近的三数之和 </a></h2><h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。</p>
+<hr>
+<p><strong>示例</strong><br>nums = [-1，2，1，-4], 和 target = 1.<br>与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).</p>
+</blockquote>
+<h3 id="解题思路-3"><a href="#解题思路-3" class="headerlink" title="解题思路"></a>解题思路</h3><p>看到这道题，第一个想法就是暴力大循环求解。。。想了很久并没有优化的方法。。按道理这个应该用什么诡异的数据结构能够优化。。我甚至还想到了排序，然后双指针。。但是这种算法显然效率还不如大循环。</p>
+<h3 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">threeSumClosest</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> target)</span> </span>&#123;<br>        <span class="hljs-keyword">int</span> min = Integer.MAX_VALUE;<br>        <span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">int</span> result = <span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; nums.length - <span class="hljs-number">2</span>; i++) &#123;<br>            <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = i + <span class="hljs-number">1</span>; j &lt; nums.length - <span class="hljs-number">1</span>; j++) &#123;<br>                <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> k = j + <span class="hljs-number">1</span>; k &lt; nums.length; k++) &#123;<br>                    sum = nums[i] + nums[j] + nums[k];<br>                    <span class="hljs-keyword">if</span> (min &gt; Math.abs(target - sum)) &#123;<br>                        min = Math.abs(target - sum);<br>                        result = sum;<br>                    &#125;<br>                    <span class="hljs-keyword">if</span> (min == <span class="hljs-number">0</span>) &#123;<br>                        <span class="hljs-keyword">return</span> result;<br>                    &#125;<br>                &#125;<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">return</span> result;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-3"><a href="#参考答案-3" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>先排序再找数的效率真的不如大循环吗？</p>
+<p>并不！！刚说完这句话我就打脸了。好气啊。。参考了一下网上别人的做法，就是先排序了，然后再找的。。我是真的没有想到这样的算法居然会比大循环来的快。。</p>
+<p>不过从时间复杂度的角度来看，大循环是<code>O(n^3)</code>，先排序后找的时间复杂度是:排序的时间<code>O(n^2)</code> + 找相近的值的效率<code>O(n^2)</code> = 总时间<code>2 * O(n^2)</code> = <code>O(n^2)</code> ，因此理论上比大循环要快的。</p>
+<p>这个故事告诉我们，想到什么算法还是要冷静分析，不能光靠猜想。。。</p>
+<p>附上别人的做法：<br><a href="https://www.cnblogs.com/jimmycheng/p/7159535.html" target="_blank" rel="noopener">LeetCode 16. 3Sum Closest. （最接近的三数之和）——by几米空间</a></p>
+<h2 id="Code-17-电话号码的字母组合"><a href="#Code-17-电话号码的字母组合" class="headerlink" title="Code.17  电话号码的字母组合 "></a>Code.17 <a href="https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/description/" target="_blank" rel="noopener"> 电话号码的字母组合 </a></h2><h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。<br>给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。</p>
+<hr>
+<p><strong>示例</strong><br>输入：”23”<br>输出：[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”].</p>
+</blockquote>
+<h3 id="解题思路-4"><a href="#解题思路-4" class="headerlink" title="解题思路"></a>解题思路</h3><p>这道题我用了树的思想来解题。因为一个数字对应多种情况，需要分开来讨论，并且数字与数字之间还有继承的关系，因此用树的结构来处理是最合适的。</p>
+<h3 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> List&lt;String&gt; <span class="hljs-title">letterCombinations</span><span class="hljs-params">(String digits)</span> </span>&#123;<br>        digits = digits.trim();<span class="hljs-comment">//先把字符串前面的空格去掉</span><br>        <span class="hljs-keyword">int</span> len = digits.length();<span class="hljs-comment">//给定长度</span><br>        <span class="hljs-keyword">if</span> (len == <span class="hljs-number">0</span>) &#123;<span class="hljs-comment">//长度为空直接返回空</span><br>            List&lt;String&gt; empty = Arrays.asList();<br>            <span class="hljs-keyword">return</span> empty ;<br>        &#125;<br>        <span class="hljs-keyword">char</span>[] dig = digits.toCharArray();<span class="hljs-comment">//把字符串拆成数组</span><br>        strTree.dig = dig;<span class="hljs-comment">//赋值树类的静态变量</span><br>        strTree.len = dig.length;<br>        strTree getStr = <span class="hljs-keyword">new</span> strTree();<span class="hljs-comment">//新建树</span><br>        getStr.addKid();<span class="hljs-comment">//一键添加子节点</span><br>        List&lt;String&gt; result =  <span class="hljs-keyword">new</span> ArrayList&lt;&gt;(strTree.res);<br>        strTree.res = <span class="hljs-keyword">new</span> ArrayList&lt;&gt;();<span class="hljs-comment">//LeetCode的评测机处理静态变量如果不手动清空会出错。一开始不知道，坑了我几次提交记录，气死我了！！！</span><br>        <span class="hljs-keyword">return</span> result;<br>    &#125;<br>    <br>&#125;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">strTree</span> </span>&#123;<br>    <span class="hljs-keyword">static</span> List&lt;String&gt; res = <span class="hljs-keyword">new</span> ArrayList&lt;String&gt;();<span class="hljs-comment">//这几个静态变量都是辅助用的</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>[] letter = <span class="hljs-string">"abcdefghijklmnopqrstuvwxyz"</span>.toCharArray();<span class="hljs-comment">//字母表</span><br>    <span class="hljs-keyword">static</span> <span class="hljs-keyword">char</span>[] dig;<br>    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> len;<br>    String str;<br>    <span class="hljs-keyword">int</span> order;<br>    strTree parent;<br>    strTree kid1, kid2, kid3, kid4;<span class="hljs-comment">//最多可以有4各分支，故声明4个孩子</span><br>    strTree() &#123;<span class="hljs-comment">//默认构造函数，用来初始化根节点的</span><br>        order = <span class="hljs-number">0</span>;<br>        str = <span class="hljs-string">""</span>;<br>        parent = <span class="hljs-keyword">null</span>;<br>    &#125;<br>    strTree(<span class="hljs-keyword">char</span> a, strTree p) &#123;<span class="hljs-comment">//构造函数，用来生成子节点的</span><br>        <span class="hljs-keyword">this</span>.parent = p;<br>        <span class="hljs-keyword">this</span>.order = parent.order + <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">this</span>.str = parent.str + a;<span class="hljs-comment">//把父节点的字符串继承下来并添加上自己的内容</span><br>    &#125;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">addKid</span><span class="hljs-params">()</span> </span>&#123;<span class="hljs-comment">//虽然命名成添加节点，但是其实是一键生成树函数，毕竟自己调用自己就可以不断生成子节点的子节点</span><br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.order == strTree.len) &#123;如果到最后一个数字了，就是叶节点，不用再添加子节点了，就把这个叶节点添加进结果列表里去就行<br>            strTree.res.add(<span class="hljs-keyword">this</span>.str);<br>            <span class="hljs-keyword">return</span>;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.dig[order] == <span class="hljs-string">'7'</span>) &#123;<span class="hljs-comment">//下面7、8、9数字比较特殊，所以得单独拿出来讨论</span><br>            kid1 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'p'</span>, <span class="hljs-keyword">this</span>);<br>            kid1.addKid();<br>            kid2 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'q'</span>, <span class="hljs-keyword">this</span>);<br>            kid2.addKid();<br>            kid3 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'r'</span>, <span class="hljs-keyword">this</span>);<br>            kid3.addKid();<br>            kid4 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'s'</span>, <span class="hljs-keyword">this</span>);<br>            kid4.addKid();<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.dig[order] == <span class="hljs-string">'8'</span>) &#123;<br>            kid1 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'t'</span>, <span class="hljs-keyword">this</span>);<br>            kid1.addKid();<br>            kid2 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'u'</span>, <span class="hljs-keyword">this</span>);<br>            kid2.addKid();<br>            kid3 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'v'</span>, <span class="hljs-keyword">this</span>);<br>            kid3.addKid();<br>        &#125; <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (<span class="hljs-keyword">this</span>.dig[order] == <span class="hljs-string">'9'</span>) &#123;<br>            kid1 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'w'</span>, <span class="hljs-keyword">this</span>);<br>            kid1.addKid();<br>            kid2 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'x'</span>, <span class="hljs-keyword">this</span>);<br>            kid2.addKid();<br>            kid3 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'y'</span>, <span class="hljs-keyword">this</span>);<br>            kid3.addKid();<br>            kid4 = <span class="hljs-keyword">new</span> strTree(<span class="hljs-string">'z'</span>, <span class="hljs-keyword">this</span>);<br>            kid4.addKid();<br>        &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//剩下的就一样处理就行</span><br>            kid1 = <span class="hljs-keyword">new</span> strTree(letter[(<span class="hljs-keyword">this</span>.dig[order] - <span class="hljs-number">50</span>) * <span class="hljs-number">3</span>], <span class="hljs-keyword">this</span>);<br>            kid1.addKid();<br>            kid2 = <span class="hljs-keyword">new</span> strTree(letter[(<span class="hljs-keyword">this</span>.dig[order] - <span class="hljs-number">50</span>) * <span class="hljs-number">3</span> + <span class="hljs-number">1</span>], <span class="hljs-keyword">this</span>);<br>            kid2.addKid();<br>            kid3 = <span class="hljs-keyword">new</span> strTree(letter[(<span class="hljs-keyword">this</span>.dig[order] - <span class="hljs-number">50</span>) * <span class="hljs-number">3</span> + <span class="hljs-number">2</span>], <span class="hljs-keyword">this</span>);<br>            kid3.addKid();<br>        &#125;<br><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-4"><a href="#参考答案-4" class="headerlink" title="参考答案"></a><a href>参考答案</a></h3><p>没有参考答案。这题战胜了95.76%的Java提交记录，还是比较好的。。不过其他人的时间也基本上没有差别特别多。。估计大家都用的差不多的做法，只是细节的部分有不同罢了。</p>
+<h2 id="Code-19-删除链表的倒数第N个节点"><a href="#Code-19-删除链表的倒数第N个节点" class="headerlink" title="Code.19  删除链表的倒数第N个节点 "></a>Code.19 <a href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/description/" target="_blank" rel="noopener"> 删除链表的倒数第N个节点 </a></h2><h3 id="题目描述-5"><a href="#题目描述-5" class="headerlink" title="题目描述"></a>题目描述</h3><blockquote>
+<p>给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。</p>
+<hr>
+<p><strong>示例</strong><br>给定一个链表: 1-&gt;2-&gt;3-&gt;4-&gt;5, 和 n = 2.<br>当删除了倒数第二个节点后，链表变为 1-&gt;2-&gt;3-&gt;5.</p>
+</blockquote>
+<h3 id="解题思路-5"><a href="#解题思路-5" class="headerlink" title="解题思路"></a>解题思路</h3><p>解题的时候没多想，用的是二次遍历的方式，第一次遍历出列表的个数，第二次遍历到需要删除的地方，把节点删除。</p>
+<p>做完题后来也没有看答案。只是在刷后面的题的时候，突然想起来，这种题其实一遍遍历就够了。虽然标记是难题，但实际上这题也不难，后来就没有改。具体做法还是看下面的参考答案。</p>
+<h3 id="代码-5"><a href="#代码-5" class="headerlink" title="代码"></a>代码</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">/**<br> * Definition for singly-linked list.<br> * public class ListNode &#123;<br> *     int val;<br> *     ListNode next;<br> *     ListNode(int x) &#123; val = x; &#125;<br> * &#125;<br> */</span><br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>&#123;<br>    <span class="hljs-function"><span class="hljs-keyword">public</span> ListNode <span class="hljs-title">removeNthFromEnd</span><span class="hljs-params">(ListNode head, <span class="hljs-keyword">int</span> n)</span> </span>&#123;<br>        ListNode temp = head;<br>        ListNode temp2 = head;<br>        <span class="hljs-keyword">int</span> size = <span class="hljs-number">1</span>;<br>        <span class="hljs-keyword">while</span> (temp.next != <span class="hljs-keyword">null</span>) &#123;<span class="hljs-comment">//遍历链表的长度</span><br>            size++;<br>            temp = temp.next;<br>        &#125;<br>        <span class="hljs-keyword">if</span> (n == size) &#123;<span class="hljs-comment">//如果删头</span><br>            <span class="hljs-keyword">return</span> head.next;<br>        &#125; <span class="hljs-keyword">else</span> &#123;<span class="hljs-comment">//否者删中间或结尾</span><br>            temp = head;<br>            <span class="hljs-keyword">int</span> i = size;<br>            <span class="hljs-keyword">while</span> (i - n &gt; <span class="hljs-number">0</span>) &#123;<br>                temp2 = temp;<br>                temp = temp.next;<br>                i--;<br>            &#125;<br>            <span class="hljs-keyword">if</span> (i == <span class="hljs-number">1</span>) &#123;<br>                temp2.next = <span class="hljs-keyword">null</span>;<br>            &#125; <span class="hljs-keyword">else</span> &#123;<br>                temp2.next = temp.next;<br>            &#125;<br>            <span class="hljs-keyword">return</span> head;<br>        &#125;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<h3 id="参考答案-5"><a href="#参考答案-5" class="headerlink" title="参考答案"></a><a href="https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/solution/" target="_blank" rel="noopener">参考答案</a></h3><p>双指针，既然要删除倒数第i个，那就让第一个指针先遍历i个，然后第二个指针再出发。当第一个指针指到结尾的时候，将第二个指针指向的节点的下一个删除就行了。具体的做法请看参考答案，答案有配图，比较详细。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>这周就先这样更新6道题吧。中间跳过去的两道题，大概有了一点思路。应该会在下周补上吧。</p>
+<p>写代码还是比学数学还玩一点点。。不过任务还有很多。不止有数学，还有其他各科目等着我。。</p>
+<blockquote>
+<p><strong>微笑面对危险 🎵<br>梦想成真不会遥远 🎵<br>鼓起勇气坚定向前 🎵<br>奇迹一定会出现 🎵</strong></p>
+</blockquote>
+<p>😐see you next week！</p>
+
+    </main>
+    <footer class="post-footer">
+      
+      
+      <div class="post-tags">
+        
+        
+        
+        
+        <a class="post-tag button" href="/tags/数据结构/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>数据结构</a>
+        
+        <a class="post-tag button" href="/tags/LeetCode/" style="background: #a3bb54;" rel="tag"><i class="fas fa-tags"></i>LeetCode</a>
+        
+        <a class="post-tag button" href="/tags/周记/" style="background: #47aaff;" rel="tag"><i class="fas fa-tags"></i>周记</a>
+        
+        <a class="post-tag button" href="/tags/Java/" style="background: #fc6423;" rel="tag"><i class="fas fa-tags"></i>Java</a>
+        
+      </div>
+      
+    </footer>
+  </article>
+  
+  
+<div class="reward" id="reward">
+  <p>坚持原创技术分享，您的支持是我前进的动力！</p>
+  <button id="reward-button" class="button" disable="enable">打赏</button>
+  <div id="qr" class="qr" style="display: none;">
+    
+    
+    
+  </div>
+</div>
+
+
+  
+  
+  <div class="post-nav">
+    <div class="post-nav-next post-nav-item">
+      
+      <a href="/2018/07/22/LeetCode-Week-2/" rel="next" title="LeetCode Week 2"><i class="fas fa-angle-left"></i><span class="nav-title">LeetCode Week 2</span></a>
+      
+    </div>
+    <div class="post-nav-prev post-nav-item">
+      
+      <a href="/2018/08/05/LeetCode-Week-4/" rel="prev" title="LeetCode Week 4"><span class="nav-title">LeetCode Week 4</span><i class="fas fa-angle-right"></i></a>
+      
+    </div>
+  </div>
+  
+  
+  
+
+<div class="comments" id="comments">
+  
+  
+  <div class="commentjs" id="comment-thread"></div>
+  <link rel="stylesheet" href="/css/commentjs.css">
+  <script defer type="text/javascript" src="/js/marked.min.js"></script>
+  <script defer type="text/javascript" src="/js/timeago.min.js"></script>
+  <script defer type="text/javascript" src="/js/highlight.min.js"></script>
+  <script defer type="text/javascript" src="/js/commentjs.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    getComments({
+      "type": "github",
+      "user": "JackZxj",
+      "repo": "jackzhang.github-io",
+      "client_id": "305140c96dccb0182657",
+      "client_secret": "cbd975d0c1a3a2cb86038d3d12a693e69fb7a219",
+      "no_comment": "这个页面还没有评论，现在就去评论吧！",
+      "go_to_comment": "去评论",
+      "issue_title": "LeetCode Week 3",
+      "btn_class": "button",
+      "comments_target": "#comment-thread"
+    });
+    marked.setOptions({
+      "highlight": function (code, lang) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+    function mark() {
+      var markdowns = document.getElementsByClassName("markdown");
+      for (var i = 0; i < markdowns.length; ++i){
+        if (markdowns[i].innerHTML) {
+          markdowns[i].innerHTML = marked(markdowns[i].innerHTML);
+        }
+      }
+    }
+    window.addEventListener("DOMContentLoaded", mark, false);
+    window.addEventListener("load", mark, false);
+  });
+  </script>
+  
+  
+</div>
+
+
+
+  
+</div>
+
+          </div>
+          
+          
+          
+<aside class="sidebar" id="sidebar" style="background: url(/images/sidebar_background.png);">
+  
+  <div class="search">
+    <div class="form-group">
+      <i class="fas fa-search"></i><input type="search" id="search-input" name="q" results="0" placeholder="搜索" class="form-control">
+    </div>
+  </div>
+  <div class="search-result-box" id="search-result"></div>
+  
+  
+<div class="info sidebar-item" id="info">
+  
+  <img class="author-avatar" src="/images/myavatar.png" alt="Jack Zhang">
+  
+  <h1 class="author-name">Jack Zhang</h1>
+  <h2 class="author-description"> I am the bone of salted fish, <br> fish is my body&salt is my blood.</h2>
+  <div class="site-count">
+    
+    <div class="archives-count">
+      <div class="site-count-title">归档</div>
+      <div><a href="/archives/">18</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="categories-count">
+      <div class="site-count-title">分类</div>
+      <div><a href="/categories/">12</a></div>
+    </div>
+    
+    
+    
+    <span class="site-count-divider divider">|</span>
+    
+    <div class="tags-count">
+      <div class="site-count-title">标签</div>
+      <div><a href="/tags/">29</a></div>
+    </div>
+    
+  </div>
+  
+  <div class="rss">
+    <a class="rss-link button sidebar-item" href="/atom.xml"><i class="fas fa-rss"></i>RSS</a>
+  </div>
+  
+</div>
+
+
+  <div class="sidebar-sticky">
+    
+    
+
+
+
+
+<hr>
+<div class="post-toc sidebar-item" id="toc-div">
+  <div><i class="fas fa-list-ol"></i>文章目录</div>
+  <div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-12-整数转罗马数字"><span class="toc-text">Code.12  整数转罗马数字 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-13-罗马数字转整数"><span class="toc-text">Code.13  罗马数字转整数 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-1"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-1"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-1"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-1"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-14-最长公共前缀"><span class="toc-text">Code.14  最长公共前缀 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-2"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-2"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-2"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-2"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-16-最接近的三数之和"><span class="toc-text">Code.16  最接近的三数之和 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-3"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-3"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-3"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-3"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-17-电话号码的字母组合"><span class="toc-text">Code.17  电话号码的字母组合 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-4"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-4"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-4"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-4"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code-19-删除链表的倒数第N个节点"><span class="toc-text">Code.19  删除链表的倒数第N个节点 </span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#题目描述-5"><span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解题思路-5"><span class="toc-text">解题思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#代码-5"><span class="toc-text">代码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考答案-5"><span class="toc-text">参考答案</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-text">结语</span></a></li></ol></div>
+</div>
+
+
+
+    
+    
+    
+<hr>
+<div class="social-link sidebar-item">
+  <div><i class="far fa-address-card"></i>社交链接<p></p></div>
+  <ul>
+    
+    <li><i class="fas fa-envelope"></i><a href="mailto:x_jackzhang@qq.com" target="_blank">E-Mail</a></li>
+    
+    <li><i class="fab fa-github"></i><a href="https://github.com/JackZxj" target="_blank">GitHub</a></li>
+    
+  </ul>
+</div>
+
+
+    
+    
+    
+<hr>
+<div class="blogroll sidebar-item">
+  <div><i class="fas fa-link"></i>友情链接</div>
+  <ul>
+    
+    <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+    
+    <li><a href="https://sh.alynx.xyz/" target="_blank">模板作者~</a></li>
+    
+  </ul>
+</div>
+
+
+    
+  </div>
+</aside>
+
+
+          
+        </div>
+      </div>
+    </main>
+    
+<footer id="footer" class="footer" style="background: #33363b;">
+  <div class="container">
+    <div class="back-to-top">
+      <a id="back-to-top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="copyright">
+          <span class="author">Jack Zhang</span><span class="year"><i class="far fa-copyright"></i>2018 - 2019</span>
+        </div>
+        
+        
+<div class="busuanzi">
+  <span id="busuanzi_container_site_pv"><i class="fas fa-eye"></i><span id="busuanzi_value_site_pv"></span></span><span id="busuanzi_container_site_uv"><i class="fas fa-user"></i><span id="busuanzi_value_site_uv"></span></span><span id="busuanzi_container_page_pv"><i class="far fa-file-alt"></i><span id="busuanzi_value_page_pv"></span></span>
+</div>
+
+
+        
+      </div>
+      <div class="footer-right">
+        <div class="custom-info">
+          
+          托管于<i class="fab fa-github-alt"></i><a href="https://pages.github.com/" target="_blank">GitHub Pages</a>
+          
+        </div>
+        <div class="powered-by">
+          由 <a href="https://hexo.io/" target="_blank">Hexo</a> 强力驱动 | 主题 <a href="https://github.com/AlynxZhou/hexo-theme-aria/" target="_blank">ARIA</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":200,"height":400,"hOffset":150,"vOffset":-80},"mobile":{"show":true},"react":{"opacityDefault":0.5,"opacityOnHover":0.9},"log":false});</script></body>
+</html>
